@@ -261,6 +261,12 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
+    // Reset button when music ends
+    bgMusic.addEventListener('ended', () => {
+      musicToggle.classList.remove('playing');
+      musicIcon.textContent = '🔈';
+    });
+
     // 1. Attempt immediate autoplay
     playMusic();
 
