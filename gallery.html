@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title class="lang-en">Photo Gallery — Shri Bawa Lal Ji Maharaj</title>
+  <title class="lang-hi">फोटो गैलरी — श्री बावा लाल जी महाराज</title>
+  <meta name="description" content="View sacred photographs of Shri Bawa Lal Ji Maharaj, Dhianpur temple, celebrations, and spiritual gatherings.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/tilak.jpg">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <div class="brand-icon"><img src="images/tilak.jpg" alt="Tilak" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;"></div>
+        <div class="brand-text">
+          <span class="lang-en">Shri Bawa Lal Ji</span>
+          <span class="lang-hi">श्री बावा लाल जी</span>
+          <small class="lang-en">Dhianpur, Punjab</small>
+          <small class="lang-hi">धियानपुर, पंजाब</small>
+        </div>
+      </a>
+      <div style="display:flex; align-items:center;">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-hi">होम</span></a></li>
+          <li><a href="story.html"><span class="lang-en">Story</span><span class="lang-hi">जीवन कथा</span></a></li>
+          <li><a href="acharyas.html"><span class="lang-en">Vaishnavacharyas</span><span class="lang-hi">वैष्णवाचार्य</span></a></li>
+          <li><a href="gaddies.html"><span class="lang-en">Gaddis</span><span class="lang-hi">गद्दियां</span></a></li>
+          <li><a href="aarti.html"><span class="lang-en">Aarti</span><span class="lang-hi">आरती</span></a></li>
+          <li><a href="ardas.html"><span class="lang-en">Ardas</span><span class="lang-hi">अरदास</span></a></li>
+          <li><a href="events.html"><span class="lang-en">Events</span><span class="lang-hi">उत्सव</span></a></li>
+          <li><a href="gallery.html" class="active"><span class="lang-en">Gallery</span><span class="lang-hi">गैलरी</span></a></li>
+          <li><a href="video.html"><span class="lang-en">Videos</span><span class="lang-hi">वीडियो</span></a></li>
+          <li><a href="bhajan.html"><span class="lang-en">Bhajans</span><span class="lang-hi">भजन</span></a></li>
+          <li><a href="donation.html"><span class="lang-en">Donation</span><span class="lang-hi">सेवा / दान</span></a></li>
+          <li><a href="contact.html"><span class="lang-en">Contact</span><span class="lang-hi">संपर्क</span></a></li>
+          <li>
+            <div class="lang-toggle">
+              <button class="lang-btn active" data-lang="hi">हिंदी</button>
+              <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+          </li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Banner -->
+  <div class="page-banner">
+    <div class="container">
+      <h1 class="lang-en">Photo Gallery</h1>
+      <h1 class="lang-hi">फोटो गैलरी</h1>
+      <div class="om-divider"></div>
+      <p class="lang-en">Sacred images from the divine legacy of Shri Bawa Lal Ji Maharaj</p>
+      <p class="lang-hi">श्री बावा लाल जी महाराज की दिव्य विरासत के पवित्र चित्र</p>
+    </div>
+  </div>
+
+  <!-- Gallery Section -->
+  <section class="section">
+    <div class="container">
+      <!-- Filters -->
+      <div class="gallery-filters reveal">
+        <button class="filter-btn active" data-filter="all">
+          <span class="lang-en">All</span><span class="lang-hi">सभी</span>
+        </button>
+        <button class="filter-btn" data-filter="temple">
+          <span class="lang-en">Temple</span><span class="lang-hi">मंदिर</span>
+        </button>
+        <button class="filter-btn" data-filter="bawalalji">
+          <span class="lang-en">Shri Bawa Lal Ji</span><span class="lang-hi">श्री बावा लाल जी</span>
+        </button>
+        <button class="filter-btn" data-filter="gurus">
+          <span class="lang-en">Vaishnavacharyas</span><span class="lang-hi">वैष्णवाचार्य</span>
+        </button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid">
+        <!-- Temple Category -->
+        <div class="gallery-item reveal" data-category="temple">
+          <img src="images/gallery/Temple | Dhiyanpur.jpg" alt="Temple Dhiyanpur">
+          <div class="gallery-item-overlay">
+            <span class="lang-en">Dhianpur Temple</span><span class="lang-hi">धियानपुर मंदिर</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="temple">
+          <img src="images/gallery/Temple | dhiyanpur 2.jpeg" alt="Temple Dhiyanpur 2">
+          <div class="gallery-item-overlay">
+            <span class="lang-en">Dhianpur Temple View</span><span class="lang-hi">धियानपुर मंदिर परिदृश्य</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="temple">
+          <img src="images/gallery/Temple | dhiyanpur.jpeg" alt="Temple Dhiyanpur">
+          <div class="gallery-item-overlay">
+            <span class="lang-en">Sacred Temple</span><span class="lang-hi">पवित्र मंदिर</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="temple">
+          <img src="images/gallery/Temple | diyanpur-1.jpg" alt="Temple Dhiyanpur">
+          <div class="gallery-item-overlay">
+            <span class="lang-en">Temple Architecture</span><span class="lang-hi">मंदिर वास्तुकला</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="temple">
+          <img src="images/gallery/Temple | shri-bawa-lal-ji-dhianpur-gurdaspur-temples-ZnGYY4xzeY.avif" alt="Temple Gurdaspur">
+          <div class="gallery-item-overlay">
+            <span class="lang-en">Gurdaspur Temple</span><span class="lang-hi">गुरदासपुर मंदिर</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="temple">
+          <img src="images/gallery/temple-samadhi.png" alt="Samadhi Shri Bawa Lal Ji">
+          <div class="gallery-item-overlay">
+            <span class="lang-en">Shri Bawa Lal Ji Samadhi</span><span class="lang-hi">श्री बावा लाल जी की समाधि</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item reveal" data-category="temple">
+          <img src="images/gallery/temple-baoli.jpg" alt="Temple Baoli">
+          <div class="gallery-item-overlay">
+            <span class="lang-en">Temple Baoli</span><span class="lang-hi">मंदिर बावड़ी</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="temple">
+          <img src="images/gallery/temple-sarovar.jpg" alt="Temple Sarovar">
+          <div class="gallery-item-overlay">
+            <span class="lang-en">Temple Sarovar</span><span class="lang-hi">मंदिर सरोवर</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="temple">
+          <img src="images/gallery/temple-kachi-samadhi.jpg" alt="Kachi Samadhi">
+          <div class="gallery-item-overlay">
+            <span class="lang-en">Kachi Samadhi</span><span class="lang-hi">कच्ची समाधि</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="temple">
+          <img src="images/gallery/dhianpur.jpg" alt="Dhianpur">
+          <div class="gallery-item-overlay">
+            <span class="lang-en">Dhianpur</span><span class="lang-hi">धियानपुर</span>
+          </div>
+        </div>
+
+        <!-- Bawa Lal Ji Category -->
+        <div class="gallery-item reveal" data-category="bawalalji">
+          <img src="images/gallery/Bawa lal ji 1.png" alt="Bawa Lal Ji">
+          <div class="gallery-item-overlay">
+            <span class="lang-en">Shri Bawa Lal Ji</span><span class="lang-hi">श्री बावा लाल जी</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="bawalalji">
+          <img src="images/gallery/bawa-lal-ji-11.jpg" alt="Bawa Lal Ji">
+          <div class="gallery-item-overlay">
+            <span class="lang-en">Shri Bawa Lal Ji</span><span class="lang-hi">श्री बावा लाल जी</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="bawalalji">
+          <img src="images/gallery/bawa-lal-ji.jpg" alt="Bawa Lal Ji">
+          <div class="gallery-item-overlay">
+            <span class="lang-en">Shri Bawa Lal Ji</span><span class="lang-hi">श्री बावा लाल जी</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="bawalalji">
+          <img src="images/gallery/bawa-lal-ji-12.jpg" alt="Bawa Lal Ji">
+          <div class="gallery-item-overlay">
+            <span class="lang-en">Shri Bawa Lal Ji</span><span class="lang-hi">श्री बावा लाल जी</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="bawalalji">
+          <img src="images/gallery/bawa-lal-ji-10.jpg" alt="Bawa Lal Ji">
+          <div class="gallery-item-overlay">
+            <span class="lang-en">Shri Bawa Lal Ji</span><span class="lang-hi">श्री बावा लाल जी</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="bawalalji">
+          <img src="images/gallery/bawa-lal-ji-7.jpg" alt="Bawa Lal Ji">
+          <div class="gallery-item-overlay">
+            <span class="lang-en">Shri Bawa Lal Ji</span><span class="lang-hi">श्री बावा लाल जी</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="bawalalji">
+          <img src="images/gallery/bawa-lal-ji-6.jpg" alt="Bawa Lal Ji">
+          <div class="gallery-item-overlay">
+            <span class="lang-en">Shri Bawa Lal Ji</span><span class="lang-hi">श्री बावा लाल जी</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="bawalalji">
+          <img src="images/gallery/bawa-lal-ji-5.jpg" alt="Bawa Lal Ji">
+          <div class="gallery-item-overlay">
+            <span class="lang-en">Shri Bawa Lal Ji</span><span class="lang-hi">श्री बावा लाल जी</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="bawalalji">
+          <img src="images/gallery/bawa-lal-ji-3-new.jpg" alt="Bawa Lal Ji">
+          <div class="gallery-item-overlay">
+            <span class="lang-en">Shri Bawa Lal Ji</span><span class="lang-hi">श्री बावा लाल जी</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="bawalalji">
+          <img src="images/gallery/bawa-lal-dayal-ji.jpg" alt="Bawa Lal Dayal Ji">
+          <div class="gallery-item-overlay">
+            <span class="lang-en">Shri Bawa Lal Dayal Ji</span><span class="lang-hi">श्री बावा लाल दयाल जी</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="bawalalji">
+          <img src="images/gallery/bawa-lal-ji-2.png" alt="Bawa Lal Ji">
+          <div class="gallery-item-overlay">
+            <span class="lang-en">Shri Bawa Lal Ji Portrait</span><span class="lang-hi">श्री बावा लाल जी का चित्र</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="bawalalji">
+          <img src="images/gallery/Bawa lal ji 3.jpg" alt="Bawa Lal Ji">
+          <div class="gallery-item-overlay">
+            <span class="lang-en">Shri Bawa Lal Ji Darshan</span><span class="lang-hi">श्री बावा लाल जी दर्शन</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="bawalalji">
+          <img src="images/gallery/Bawa lal ji 4.jpg" alt="Bawa Lal Ji">
+          <div class="gallery-item-overlay">
+            <span class="lang-en">Divine Darshan</span><span class="lang-hi">दिव्य दर्शन</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="bawalalji">
+          <img src="images/gallery/Shri Baba Lal Dayal ji Samadhi.webp" alt="Shri Baba Lal Dayal Ji Samadhi">
+          <div class="gallery-item-overlay">
+            <span class="lang-en">Holy Samadhi</span><span class="lang-hi">पवित्र समाधि</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="bawalalji">
+          <img src="images/gallery/Shri Bawa Lal Dayal Ji - 1.jpg" alt="Shri Bawa Lal Dayal Ji">
+          <div class="gallery-item-overlay">
+            <span class="lang-en">Satguru Shri Bawa Lal Dayal Ji</span><span class="lang-hi">सतगुरु श्री बावा लाल दयाल जी</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="bawalalji">
+          <img src="images/gallery/Shri Bawa Lala Dayal Ji.jpg" alt="Shri Bawa Lala Dayal Ji">
+          <div class="gallery-item-overlay">
+            <span class="lang-en">Eternal Light</span><span class="lang-hi">शाश्वत प्रकाश</span>
+          </div>
+        </div>
+
+        <!-- Gurus Category -->
+        <div class="gallery-item reveal" data-category="gurus">
+          <img src="images/gallery/Mahant Shri Dwarka Das Ji (1948 - 1978).jpg" alt="Mahant Shri Dwarka Das Ji">
+          <div class="gallery-item-overlay">
+            <span class="lang-en">Mahant Dwarka Das Ji</span><span class="lang-hi">महंत द्वारका दास जी</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="gurus">
+          <img src="images/gallery/Mahant Shri Harinaam Das Ji (1875 - 1935).jpg" alt="Mahant Shri Harinaam Das Ji">
+          <div class="gallery-item-overlay">
+            <span class="lang-en">Mahant Harinaam Das Ji</span><span class="lang-hi">महंत हरिनाम दास जी</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="gurus">
+          <img src="images/gallery/Mahant Shri Narain Das Ji (1978 - 2001).jpg" alt="Mahant Shri Narain Das Ji">
+          <div class="gallery-item-overlay">
+            <span class="lang-en">Mahant Narain Das Ji</span><span class="lang-hi">महंत नारायण दास जी</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="gurus">
+          <img src="images/gallery/Mahant Shri Narain Das Ji (1978 - 2001) - 1.jpg" alt="Mahant Shri Narain Das Ji">
+          <div class="gallery-item-overlay">
+            <span class="lang-en">Mahant Narain Das Ji (Portrait)</span><span class="lang-hi">महंत नारायण दास जी (चित्र)</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="gurus">
+          <img src="images/gallery/Mahant Shri Raghav Das Ji ( 1847 - 1875 ) .jpg" alt="Mahant Shri Raghav Das Ji">
+          <div class="gallery-item-overlay">
+            <span class="lang-en">Mahant Raghav Das Ji</span><span class="lang-hi">महंत राघव दास जी</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="gurus">
+          <img src="images/gallery/Shri Ram Sundar Das Ji (2001 – Present) .jpg" alt="Shri Ram Sundar Das Ji">
+          <div class="gallery-item-overlay">
+            <span class="lang-en">Mahant Ram Sundar Das Ji</span><span class="lang-hi">महंत राम सुंदर दास जी</span>
+          </div>
+        </div>
+      </div>
+
+      <p style="text-align: center; color: var(--text-muted); margin-top: var(--space-2xl); font-size: 0.9rem;">
+        <span class="lang-en"><img src="images/tilak.jpg" alt="Tilak" class="tilak-icon-inline"> More photos will be added soon. Share your sacred photographs with us via the <a href="contact.html">Contact</a> page.</span>
+        <span class="lang-hi"><img src="images/tilak.jpg" alt="Tilak" class="tilak-icon-inline"> अधिक तस्वीरें जल्द ही जोड़ी जाएंगी। कृपया <a href="contact.html">संपर्क</a> पृष्ठ के माध्यम से हमारे साथ अपने पवित्र चित्र साझा करें।</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Close">✕</button>
+    <button class="lightbox-nav lightbox-prev" aria-label="Previous">‹</button>
+    <img src="" alt="Gallery Image">
+    <button class="lightbox-nav lightbox-next" aria-label="Next">›</button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-text">
+            <span class="lang-en"><img src="images/tilak.jpg" alt="Tilak" class="tilak-icon-inline"> Shri Bawa Lal Ji Maharaj</span>
+            <span class="lang-hi"><img src="images/tilak.jpg" alt="Tilak" class="tilak-icon-inline"> श्री बावा लाल जी महाराज</span>
+          </div>
+          <p class="lang-en">Walk the path of truth, stay humble, and remember the Divine in all that you do.<br><span style="opacity: 0.8; font-style: italic; font-size: 0.9em; display: block; margin-top: 0.5rem;">- Inspired by the teachings of Shri Bawa Lal Dayal ji</span></p>
+          <p class="lang-hi">सत्य के मार्ग पर चलें, विनम्र रहें और अपने सभी कार्यों में ईश्वर को याद रखें।<br><span style="opacity: 0.8; font-style: italic; font-size: 0.9em; display: block; margin-top: 0.5rem;">- श्री बावा लाल दयाल जी की शिक्षाओं से प्रेरित</span></p>
+        </div>
+        <div class="footer-col">
+          <h4 class="lang-en">Quick Links</h4>
+          <h4 class="lang-hi">मुख्य लिंक</h4>
+          <ul>
+            <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-hi">होम</span></a></li>
+            <li><a href="story.html"><span class="lang-en">Sacred Story</span><span class="lang-hi">पवित्र कथा</span></a></li>
+            <li><a href="acharyas.html"><span class="lang-en">Vaishnavacharyas</span><span class="lang-hi">वैष्णवाचार्य</span></a></li>
+            <li><a href="gaddies.html"><span class="lang-en">Gaddis</span><span class="lang-hi">गद्दियां</span></a></li>
+          <li><a href="aarti.html"><span class="lang-en">Aarti</span><span class="lang-hi">आरती</span></a></li>
+          <li><a href="ardas.html"><span class="lang-en">Ardas</span><span class="lang-hi">अरदास</span></a></li>
+            <li><a href="events.html"><span class="lang-en">Events</span><span class="lang-hi">उत्सव</span></a></li>
+            <li><a href="gallery.html"><span class="lang-en">Photo Gallery</span><span class="lang-hi">फोटो गैलरी</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="lang-en">© 2025 Shri Bawa Lal Ji Maharaj Trust, Dhianpur. All rights reserved.</p>
+        <p class="lang-hi">© 2025 श्री बावा लाल जी महाराज ट्रस्ट, धियानपुर। सर्वाधिकार सुरक्षित।</p>
+        <p><img src="images/tilak.jpg" alt="Tilak" class="tilak-icon-inline"> <span class="lang-en">Jai Shri Bawa Lal Ji Maharaj</span><span class="lang-hi">जय श्री बावा लाल जी महाराज</span> <img src="images/tilak.jpg" alt="Tilak" class="tilak-icon-inline"></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

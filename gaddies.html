@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title class="lang-en">The 22 Guru Gaddis — Shri Bawa Lal Ji Maharaj</title>
+  <title class="lang-hi">22 गुरु गद्दियां — श्री बावा लाल जी महाराज</title>
+  <meta name="description" content="Discover the 22 Guru Gaddis established by Satguru Shri Bawa Lal Dayal Ji Maharaj across India, Pakistan, and Afghanistan to protect Sanatan Dharma.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/tilak.jpg">
+  <style>
+    .gaddi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .gaddi-card {
+      background: var(--bg-glass);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: all var(--transition-normal);
+      display: flex;
+      gap: 1rem;
+    }
+    .gaddi-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-sm);
+    }
+    .gaddi-number {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--saffron);
+      font-family: var(--font-heading);
+      min-width: 30px;
+    }
+    .gaddi-content h4 {
+      margin-top: 0;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+    .gaddi-content p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin: 0;
+      line-height: 1.5;
+    }
+    .gaddi-location {
+      display: inline-block;
+      font-size: 0.8rem;
+      color: var(--gold);
+      background: rgba(212, 175, 55, 0.1);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      margin-top: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <div class="brand-icon"><img src="images/tilak.jpg" alt="Tilak" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;"></div>
+        <div class="brand-text">
+          <span class="lang-en">Shri Bawa Lal Ji</span>
+          <span class="lang-hi">श्री बावा लाल जी</span>
+          <small class="lang-en">Dhianpur, Punjab</small>
+          <small class="lang-hi">धियानपुर, पंजाब</small>
+        </div>
+      </a>
+      <div style="display:flex; align-items:center;">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-hi">होम</span></a></li>
+          <li><a href="story.html"><span class="lang-en">Story</span><span class="lang-hi">जीवन कथा</span></a></li>
+          <li><a href="acharyas.html"><span class="lang-en">Vaishnavacharyas</span><span class="lang-hi">वैष्णवाचार्य</span></a></li>
+          <li><a href="gaddies.html" class="active"><span class="lang-en">Gaddis</span><span class="lang-hi">गद्दियां</span></a></li>
+          <li><a href="aarti.html"><span class="lang-en">Aarti</span><span class="lang-hi">आरती</span></a></li>
+          <li><a href="ardas.html"><span class="lang-en">Ardas</span><span class="lang-hi">अरदास</span></a></li>
+          <li><a href="events.html"><span class="lang-en">Events</span><span class="lang-hi">उत्सव</span></a></li>
+          <li><a href="gallery.html"><span class="lang-en">Gallery</span><span class="lang-hi">गैलरी</span></a></li>
+          <li><a href="video.html"><span class="lang-en">Videos</span><span class="lang-hi">वीडियो</span></a></li>
+          <li><a href="bhajan.html"><span class="lang-en">Bhajans</span><span class="lang-hi">भजन</span></a></li>
+          <li><a href="donation.html"><span class="lang-en">Donation</span><span class="lang-hi">सेवा / दान</span></a></li>
+          <li><a href="contact.html"><span class="lang-en">Contact</span><span class="lang-hi">संपर्क</span></a></li>
+          <li>
+            <div class="lang-toggle">
+              <button class="lang-btn active" data-lang="hi">हिंदी</button>
+              <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+          </li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Banner -->
+  <div class="page-banner">
+    <div class="container">
+      <h1 class="lang-en">The 22 Guru Gaddis</h1>
+      <h1 class="lang-hi">22 गुरु गद्दियां</h1>
+      <div class="om-divider"></div>
+      <p class="lang-en">Spiritual seats established to protect and maintain Sanatan Dharma</p>
+      <p class="lang-hi">सनातन धर्म की रक्षा और रखरखाव के लिए स्थापित आध्यात्मिक पीठ</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="reveal" style="text-align: center; max-width: 800px; margin: 0 auto 3rem auto;">
+        <p class="lang-en" style="font-size: 1.1rem; line-height: 1.8;">
+          As we know Satguru Shree Bawa Lal Dayal Ji Maharaj traveled all around the world & settled 22 different Guru Gaddis and 22 Shishyas (disciples) for them to maintain and protect Sanatan Dharma / Hindu Dharma from being lost in that era.
+        </p>
+        <p class="lang-hi" style="font-size: 1.1rem; line-height: 1.8;">
+          जैसा कि हम जानते हैं कि सतगुरु श्री बावा लाल दयाल जी महाराज ने पूरे विश्व की यात्रा की और 22 अलग-अलग गुरु गद्दियां और उनके लिए 22 शिष्य स्थापित किए ताकि वे उस युग में लुप्त हो रहे सनातन धर्म / हिंदू धर्म की रक्षा कर सकें।
+        </p>
+        
+        <h3 style="margin-top: 2rem; color: var(--gold); font-family: var(--font-heading);">
+          <span class="lang-en">Name of the First Mahant of Gaddis With Place and Locations</span>
+          <span class="lang-hi">गद्दियों के प्रथम महंतों के नाम एवं स्थान का विवरण</span>
+        </h3>
+      </div>
+
+      <div class="gaddi-grid">
+        <!-- 1 -->
+        <div class="gaddi-card reveal">
+          <div class="gaddi-number">1</div>
+          <div class="gaddi-content">
+            <h4 class="lang-en">Sh. Mahant Gurmukh Dass Ji</h4>
+            <h4 class="lang-hi">श्री महंत गुरमुख दास जी</h4>
+            <p class="lang-en">Darbar Shri Bawa Lal Ji</p>
+            <p class="lang-hi">दरबार श्री बावा लाल जी</p>
+            <div class="gaddi-location">
+              <span class="lang-en">📍 Dhianpur (Batala), Distt. Gurdaspur, Punjab</span>
+              <span class="lang-hi">📍 धियानपुर (बटाला), जिला गुरदासपुर, पंजाब</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="gaddi-card reveal">
+          <div class="gaddi-number">2</div>
+          <div class="gaddi-content">
+            <h4 class="lang-en">Sh. Mahant Tapa Dass Ji</h4>
+            <h4 class="lang-hi">श्री महंत तपा दास जी</h4>
+            <p class="lang-en">Thakurdwara Bawa Lal Ji Datarpur</p>
+            <p class="lang-hi">ठाकुरद्वारा बावा लाल जी दातारपुर</p>
+            <div class="gaddi-location">
+              <span class="lang-en">📍 Rampur-Haler, Dist. Hoshiarpur, Punjab</span>
+              <span class="lang-hi">📍 रामपुर-हलेर, जिला होशियारपुर, पंजाब</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="gaddi-card reveal">
+          <div class="gaddi-number">3</div>
+          <div class="gaddi-content">
+            <h4 class="lang-en">Sh. Mahant Ram Dass Ji</h4>
+            <h4 class="lang-hi">श्री महंत राम दास जी</h4>
+            <p class="lang-en">Gaddi Bawa Lal Ji</p>
+            <p class="lang-hi">गद्दी बावा लाल जी</p>
+            <div class="gaddi-location">
+              <span class="lang-en">📍 Santokhsar, Amritsar, Punjab</span>
+              <span class="lang-hi">📍 संतोखसर, अमृतसर, पंजाब</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="gaddi-card reveal">
+          <div class="gaddi-number">4</div>
+          <div class="gaddi-content">
+            <h4 class="lang-en">Mahamandleshwar Mahant 108 Shri Shyam Sunder Das Ji</h4>
+            <h4 class="lang-hi">महामंडलेश्वर महंत 108 श्री श्याम सुंदर दास जी</h4>
+            <p class="lang-en">Shifted to Haryana</p>
+            <p class="lang-hi">हरियाणा में स्थानांतरित</p>
+            <div class="gaddi-location">
+              <span class="lang-en">📍 Shahabad Markanda, Haryana</span>
+              <span class="lang-hi">📍 शाहाबाद मारकंडा, हरियाणा</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="gaddi-card reveal">
+          <div class="gaddi-number">5</div>
+          <div class="gaddi-content">
+            <h4 class="lang-en">Sh. Mahant Kirpa Ram Ji</h4>
+            <h4 class="lang-hi">श्री महंत कृपा राम जी</h4>
+            <p class="lang-en">Org. Hafizabad (Dist Gujranwala, Pakistan)</p>
+            <p class="lang-hi">मूलतः हाफिज़ाबाद (जिला गुजरांवाला, पाकिस्तान)</p>
+            <div class="gaddi-location">
+              <span class="lang-en">📍 Nissar Chowk, Panipat, Haryana</span>
+              <span class="lang-hi">📍 निसार चौक, पानीपत, हरियाणा</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="gaddi-card reveal">
+          <div class="gaddi-number">6</div>
+          <div class="gaddi-content">
+            <h4 class="lang-en">Sh. Mahant Sewa Ram Ji</h4>
+            <h4 class="lang-hi">श्री महंत सेवा राम जी</h4>
+            <p class="lang-en">Gaddi Bawa Lal Ji</p>
+            <p class="lang-hi">गद्दी बावा लाल जी</p>
+            <div class="gaddi-location">
+              <span class="lang-en">📍 Kalanaur, Teh. Dera Baba Nanak, Gurdaspur, Punjab</span>
+              <span class="lang-hi">📍 कलानौर, डेरा बाबा नानक, गुरदासपुर, पंजाब</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="gaddi-card reveal">
+          <div class="gaddi-number">7</div>
+          <div class="gaddi-content">
+            <h4 class="lang-en">Sh. Mahant Jai Ram Dass Ji</h4>
+            <h4 class="lang-hi">श्री महंत जय राम दास जी</h4>
+            <p class="lang-en">Gaddi Bawa Lal Ji</p>
+            <p class="lang-hi">गद्दी बावा लाल जी</p>
+            <div class="gaddi-location">
+              <span class="lang-en">📍 Lahore, Pakistan</span>
+              <span class="lang-hi">📍 लाहौर, पाकिस्तान</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="gaddi-card reveal">
+          <div class="gaddi-number">8</div>
+          <div class="gaddi-content">
+            <h4 class="lang-en">Sh. Mahant Parhalad Ji</h4>
+            <h4 class="lang-hi">श्री महंत प्रह्लाद जी</h4>
+            <p class="lang-en">Gaddi Bawa Lal Ji</p>
+            <p class="lang-hi">गद्दी बावा लाल जी</p>
+            <div class="gaddi-location">
+              <span class="lang-en">📍 Bhikhi, Distt. Amritsar, Punjab</span>
+              <span class="lang-hi">📍 भीखी, जिला अमृतसर, पंजाब</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="gaddi-card reveal">
+          <div class="gaddi-number">9</div>
+          <div class="gaddi-content">
+            <h4 class="lang-en">Sh. Mahant Balmik Ji</h4>
+            <h4 class="lang-hi">श्री महंत बाल्मीकि जी</h4>
+            <p class="lang-en">Gaddi Bawa Lal Ji</p>
+            <p class="lang-hi">गद्दी बावा लाल जी</p>
+            <div class="gaddi-location">
+              <span class="lang-en">📍 Multan, Pakistan</span>
+              <span class="lang-hi">📍 मुल्तान, पाकिस्तान</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="gaddi-card reveal">
+          <div class="gaddi-number">10</div>
+          <div class="gaddi-content">
+            <h4 class="lang-en">Sh. Mahant Parmanand Ji</h4>
+            <h4 class="lang-hi">श्री महंत परमानंद जी</h4>
+            <p class="lang-en">Gaddi Bawa Lal Ji</p>
+            <p class="lang-hi">गद्दी बावा लाल जी</p>
+            <div class="gaddi-location">
+              <span class="lang-en">📍 Chanute, Distt. Jhang, Pakistan</span>
+              <span class="lang-hi">📍 चन्यूट, जिला झांग, पाकिस्तान</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="gaddi-card reveal">
+          <div class="gaddi-number">11</div>
+          <div class="gaddi-content">
+            <h4 class="lang-en">Sh. Mahant Premnem Ji</h4>
+            <h4 class="lang-hi">श्री महंत प्रेमनम जी</h4>
+            <p class="lang-en">Gaddi Bawa Lal Ji</p>
+            <p class="lang-hi">गद्दी बावा लाल जी</p>
+            <div class="gaddi-location">
+              <span class="lang-en">📍 Sankhatra, Distt. Gujrat, Pakistan</span>
+              <span class="lang-hi">📍 संखतरा, जिला गुजरात, पाकिस्तान</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="gaddi-card reveal">
+          <div class="gaddi-number">12</div>
+          <div class="gaddi-content">
+            <h4 class="lang-en">Sh. Mahant Kushal Kalyan Ji</h4>
+            <h4 class="lang-hi">श्री महंत कुशल कल्याण जी</h4>
+            <p class="lang-en">Gaddi Bawa Lal Ji</p>
+            <p class="lang-hi">गद्दी बावा लाल जी</p>
+            <div class="gaddi-location">
+              <span class="lang-en">📍 Chomukh, Distt. Multan, Pakistan</span>
+              <span class="lang-hi">📍 चोमुख, जिला मुल्तान, पाकिस्तान</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 13 -->
+        <div class="gaddi-card reveal">
+          <div class="gaddi-number">13</div>
+          <div class="gaddi-content">
+            <h4 class="lang-en">Sh. Mahant Bhagat Mukhi Ji</h4>
+            <h4 class="lang-hi">श्री महंत भगत मुखी जी</h4>
+            <p class="lang-en">Gaddi Bawa Lal Ji</p>
+            <p class="lang-hi">गद्दी बावा लाल जी</p>
+            <div class="gaddi-location">
+              <span class="lang-en">📍 Domeli, Near Delhi</span>
+              <span class="lang-hi">📍 डोमेली, दिल्ली के पास</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 14 -->
+        <div class="gaddi-card reveal">
+          <div class="gaddi-number">14</div>
+          <div class="gaddi-content">
+            <h4 class="lang-en">Sh. Mahant Surtha Nand Ji</h4>
+            <h4 class="lang-hi">श्री महंत सुरथा नंद जी</h4>
+            <p class="lang-en">Gaddi Bawa Lal Ji</p>
+            <p class="lang-hi">गद्दी बावा लाल जी</p>
+            <div class="gaddi-location">
+              <span class="lang-en">📍 Delhi</span>
+              <span class="lang-hi">📍 दिल्ली</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 15 -->
+        <div class="gaddi-card reveal">
+          <div class="gaddi-number">15</div>
+          <div class="gaddi-content">
+            <h4 class="lang-en">Sh. Mahant Kanshi Ram Ji</h4>
+            <h4 class="lang-hi">श्री महंत कांशी राम जी</h4>
+            <p class="lang-en">Gaddi Bawa Lal Ji</p>
+            <p class="lang-hi">गद्दी बावा लाल जी</p>
+            <div class="gaddi-location">
+              <span class="lang-en">📍 Peshawar, Pakistan</span>
+              <span class="lang-hi">📍 पेशावर, पाकिस्तान</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 16 -->
+        <div class="gaddi-card reveal">
+          <div class="gaddi-number">16</div>
+          <div class="gaddi-content">
+            <h4 class="lang-en">Sh. Mahant Murari Dass Ji</h4>
+            <h4 class="lang-hi">श्री महंत मुरारी दास जी</h4>
+            <p class="lang-en">Gaddi Bawa Lal Ji</p>
+            <p class="lang-hi">गद्दी बावा लाल जी</p>
+            <div class="gaddi-location">
+              <span class="lang-en">📍 Giri Girnar, Distt. Junagarh, Gujarat</span>
+              <span class="lang-hi">📍 गिरि गिरनार, जिला जूनागढ़, गुजरात</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 17 -->
+        <div class="gaddi-card reveal">
+          <div class="gaddi-number">17</div>
+          <div class="gaddi-content">
+            <h4 class="lang-en">Sh. Mahant Jiwan Dass Ji</h4>
+            <h4 class="lang-hi">श्री महंत जीवन दास जी</h4>
+            <p class="lang-en">Gaddi Bawa Lal Ji</p>
+            <p class="lang-hi">गद्दी बावा लाल जी</p>
+            <div class="gaddi-location">
+              <span class="lang-en">📍 Surat, Gujarat</span>
+              <span class="lang-hi">📍 सूरत, गुजरात</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 18 -->
+        <div class="gaddi-card reveal">
+          <div class="gaddi-number">18</div>
+          <div class="gaddi-content">
+            <h4 class="lang-en">Sh. Mahant Bithal Dass Ji</h4>
+            <h4 class="lang-hi">श्री महंत बिठ्ठल दास जी</h4>
+            <p class="lang-en">Gaddi Bawa Lal Ji</p>
+            <p class="lang-hi">गद्दी बावा लाल जी</p>
+            <div class="gaddi-location">
+              <span class="lang-en">📍 Ayodhya, U.P.</span>
+              <span class="lang-hi">📍 अयोध्या, उत्तर प्रदेश</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 19 -->
+        <div class="gaddi-card reveal">
+          <div class="gaddi-number">19</div>
+          <div class="gaddi-content">
+            <h4 class="lang-en">Sh. Mahant Rangi Ram Ji</h4>
+            <h4 class="lang-hi">श्री महंत रंगी राम जी</h4>
+            <p class="lang-en">Gaddi Bawa Lal Ji</p>
+            <p class="lang-hi">गद्दी बावा लाल जी</p>
+            <div class="gaddi-location">
+              <span class="lang-en">📍 Asi Ghat, Benaras, U.P.</span>
+              <span class="lang-hi">📍 अस्सी घाट, बनारस (काशी), उत्तर प्रदेश</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 20 -->
+        <div class="gaddi-card reveal">
+          <div class="gaddi-number">20</div>
+          <div class="gaddi-content">
+            <h4 class="lang-en">Sh. Mahant Jagdish Dass Ji</h4>
+            <h4 class="lang-hi">श्री महंत जगदीश दास जी</h4>
+            <p class="lang-en">Gaddi Bawa Lal Ji</p>
+            <p class="lang-hi">गद्दी बावा लाल जी</p>
+            <div class="gaddi-location">
+              <span class="lang-en">📍 Ujjain, Madhya Pradesh</span>
+              <span class="lang-hi">📍 उज्जैन, मध्य प्रदेश</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 21 -->
+        <div class="gaddi-card reveal">
+          <div class="gaddi-number">21</div>
+          <div class="gaddi-content">
+            <h4 class="lang-en">Sh. Mahant Yado Ram Ji</h4>
+            <h4 class="lang-hi">श्री महंत यादो राम जी</h4>
+            <p class="lang-en">Known as Lal Peer</p>
+            <p class="lang-hi">लाल पीर के नाम से विख्यात</p>
+            <div class="gaddi-location">
+              <span class="lang-en">📍 Ghazni, Afghanistan</span>
+              <span class="lang-hi">📍 गजनी, अफगानिस्तान</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 22 -->
+        <div class="gaddi-card reveal">
+          <div class="gaddi-number">22</div>
+          <div class="gaddi-content">
+            <h4 class="lang-en">Sh. Mahant Maluk Dass Ji</h4>
+            <h4 class="lang-hi">श्री महंत मलूक दास जी</h4>
+            <p class="lang-en">Known as Lal Peer</p>
+            <p class="lang-hi">लाल पीर के नाम से विख्यात</p>
+            <div class="gaddi-location">
+              <span class="lang-en">📍 Kabul, Afghanistan</span>
+              <span class="lang-hi">📍 काबुल, अफगानिस्तान</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-text">
+            <span class="lang-en"><img src="images/tilak.jpg" alt="Tilak" class="tilak-icon-inline"> Shri Bawa Lal Ji Maharaj</span>
+            <span class="lang-hi"><img src="images/tilak.jpg" alt="Tilak" class="tilak-icon-inline"> श्री बावा लाल जी महाराज</span>
+          </div>
+          <p class="lang-en">Walk the path of truth, stay humble, and remember the Divine in all that you do.<br><span style="opacity: 0.8; font-style: italic; font-size: 0.9em; display: block; margin-top: 0.5rem;">- Inspired by the teachings of Shri Bawa Lal Dayal ji</span></p>
+          <p class="lang-hi">सत्य के मार्ग पर चलें, विनम्र रहें और अपने सभी कार्यों में ईश्वर को याद रखें।<br><span style="opacity: 0.8; font-style: italic; font-size: 0.9em; display: block; margin-top: 0.5rem;">- श्री बावा लाल दयाल जी की शिक्षाओं से प्रेरित</span></p>
+        </div>
+        <div class="footer-col">
+          <h4 class="lang-en">Quick Links</h4>
+          <h4 class="lang-hi">मुख्य लिंक</h4>
+          <ul>
+            <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-hi">होम</span></a></li>
+            <li><a href="story.html"><span class="lang-en">Sacred Story</span><span class="lang-hi">पवित्र कथा</span></a></li>
+            <li><a href="acharyas.html"><span class="lang-en">Vaishnavacharyas</span><span class="lang-hi">वैष्णवाचार्य</span></a></li>
+            <li><a href="gaddies.html"><span class="lang-en">Gaddis</span><span class="lang-hi">गद्दियां</span></a></li>
+          <li><a href="aarti.html"><span class="lang-en">Aarti</span><span class="lang-hi">आरती</span></a></li>
+          <li><a href="ardas.html"><span class="lang-en">Ardas</span><span class="lang-hi">अरदास</span></a></li>
+            <li><a href="events.html"><span class="lang-en">Events</span><span class="lang-hi">उत्सव</span></a></li>
+            <li><a href="gallery.html"><span class="lang-en">Photo Gallery</span><span class="lang-hi">फोटो गैलरी</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="lang-en">© 2025 Shri Bawa Lal Ji Maharaj Trust, Dhianpur. All rights reserved.</p>
+        <p class="lang-hi">© 2025 श्री बावा लाल जी महाराज ट्रस्ट, धियानपुर। सर्वाधिकार सुरक्षित।</p>
+        <p><img src="images/tilak.jpg" alt="Tilak" class="tilak-icon-inline"> <span class="lang-en">Jai Shri Bawa Lal Ji Maharaj</span><span class="lang-hi">जय श्री बावा लाल जी महाराज</span> <img src="images/tilak.jpg" alt="Tilak" class="tilak-icon-inline"></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

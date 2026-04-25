@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title class="lang-en">The Sacred Story — Shri Bawa Lal Ji Maharaj</title>
+  <title class="lang-hi">पवित्र कथा — श्री बावा लाल जी महाराज</title>
+  <meta name="description" content="Read the immortal saga of Satguru Shri Bawa Lal Dayal Ji. A detailed biography of his divine life, spiritual journey, and teachings.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/tilak.jpg">
+  <style>
+    .story-hero {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .story-section {
+      background: var(--bg-glass);
+      border: 1px solid var(--border-subtle);
+      border-radius: 16px;
+      padding: 3rem;
+      margin-bottom: 3rem;
+      box-shadow: var(--shadow-sm);
+      transition: all var(--transition-normal);
+    }
+    .story-section:hover {
+      border-color: var(--gold);
+      box-shadow: var(--shadow-md);
+    }
+    .story-section h2 {
+      color: var(--saffron);
+      font-family: var(--font-heading);
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .story-section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+    }
+    .story-list {
+      list-style-type: none;
+      padding-left: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .story-list li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.8rem;
+      font-size: 1.1rem;
+      color: var(--text-primary);
+    }
+    .story-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.3rem;
+      width: 1rem;
+      height: 1rem;
+      background: url('images/tilak.jpg') center/contain no-repeat;
+      border-radius: 50%;
+      opacity: 0.8;
+    }
+    .highlight-quote {
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(220, 20, 60, 0.05));
+      border-left: 4px solid var(--gold);
+      padding: 2rem;
+      font-size: 1.2rem;
+      font-style: italic;
+      margin: 2rem 0;
+      border-radius: 0 12px 12px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <div class="brand-icon"><img src="images/tilak.jpg" alt="Tilak" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;"></div>
+        <div class="brand-text">
+          <span class="lang-en">Shri Bawa Lal Ji</span>
+          <span class="lang-hi">श्री बावा लाल जी</span>
+          <small class="lang-en">Dhianpur, Punjab</small>
+          <small class="lang-hi">धियानपुर, पंजाब</small>
+        </div>
+      </a>
+      <div style="display:flex; align-items:center;">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-hi">होम</span></a></li>
+          <li><a href="story.html" class="active"><span class="lang-en">Story</span><span class="lang-hi">जीवन कथा</span></a></li>
+          <li><a href="acharyas.html"><span class="lang-en">Vaishnavacharyas</span><span class="lang-hi">वैष्णवाचार्य</span></a></li>
+          <li><a href="gaddies.html"><span class="lang-en">Gaddis</span><span class="lang-hi">गद्दियां</span></a></li>
+          <li><a href="aarti.html"><span class="lang-en">Aarti</span><span class="lang-hi">आरती</span></a></li>
+          <li><a href="ardas.html"><span class="lang-en">Ardas</span><span class="lang-hi">अरदास</span></a></li>
+          <li><a href="events.html"><span class="lang-en">Events</span><span class="lang-hi">उत्सव</span></a></li>
+          <li><a href="gallery.html"><span class="lang-en">Gallery</span><span class="lang-hi">गैलरी</span></a></li>
+          <li><a href="video.html"><span class="lang-en">Videos</span><span class="lang-hi">वीडियो</span></a></li>
+          <li><a href="bhajan.html"><span class="lang-en">Bhajans</span><span class="lang-hi">भजन</span></a></li>
+          <li><a href="donation.html"><span class="lang-en">Donation</span><span class="lang-hi">सेवा / दान</span></a></li>
+          <li><a href="contact.html"><span class="lang-en">Contact</span><span class="lang-hi">संपर्क</span></a></li>
+          <li>
+            <div class="lang-toggle">
+              <button class="lang-btn active" data-lang="hi">हिंदी</button>
+              <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+          </li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Banner -->
+  <div class="page-banner">
+    <div class="container">
+      <h1 class="lang-en">The Sacred Story</h1>
+      <h1 class="lang-hi">पवित्र कथा: जीवन परिचय</h1>
+      <div class="om-divider"></div>
+      <p class="lang-en">The Immortal Saga & Legacy of Satguru Shri Bawa Lal Dayal Ji Maharaj</p>
+      <p class="lang-hi">सतगुरु श्री बावा लाल दयाल जी महाराज की अमर गाथा और विरासत</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container-narrow">
+      
+      <!-- 1. Biographical Overview -->
+      <div class="story-section reveal">
+        <h2>
+          <span class="lang-en">About the Saint</span>
+          <span class="lang-hi">संत के बारे में</span>
+        </h2>
+        <div class="lang-en">
+          <p>Shri Bawa Lal Dayal Ji was a revered saint of North India, known for his deep spiritual wisdom and simple teachings. He lived during the 17th century and dedicated his life to guiding people toward truth, devotion, and inner peace.</p>
+          <p>Born in Kasur (present-day Pakistan), he showed spiritual qualities from a very young age. He was raised in a culturally rich environment influenced by Bhakti traditions, Sufism, and Nath yogic practices. From his childhood, he displayed signs of detachment (vairagya), often engaging in meditation and seeking solitude.</p>
+        </div>
+        <div class="lang-hi">
+          <p>श्री बावा लाल दयाल जी उत्तर भारत के एक महान संत थे, जिन्हें उनके गहरे आध्यात्मिक ज्ञान और सरल शिक्षाओं के लिए जाना जाता था। उन्होंने 17वीं शताब्दी के दौरान सत्य, भक्ति और आंतरिक शांति की ओर लोगों का मार्गदर्शन करने के लिए अपना जीवन समर्पित कर दिया।</p>
+          <p>कसूर (वर्तमान पाकिस्तान) में जन्मे बावा लाल जी ने बहुत कम उम्र से ही आध्यात्मिक गुण दिखाए। उनका पालन-पोषण भक्ति परंपराओं, सूफीवाद और नाथ योग प्रथाओं से प्रभावित सांस्कृतिक रूप से समृद्ध वातावरण में हुआ था। बचपन से ही, उन्होंने वैराग्य के लक्षण प्रदर्शित किए, अक्सर ध्यानावस्था में लगे रहते थे और एकांत की तलाश करते थे।</p>
+        </div>
+      </div>
+
+      <!-- 2. Spiritual Evolution -->
+      <div class="story-section reveal">
+        <h2>
+          <span class="lang-en">The Spiritual Journey</span>
+          <span class="lang-hi">आध्यात्मिक यात्रा</span>
+        </h2>
+        <div class="lang-en">
+          <p>His spiritual turning point came with his association with Swami Chaitanya. Under his Guru’s strict guidance, Bawa Lal Ji underwent rigorous training in yoga, meditation, and scriptural wisdom.</p>
+          <ul class="story-list">
+            <li>Practiced deep meditation and yogic austerities in the Himalayas.</li>
+            <li>Lived a disciplined and simple life focused on controlling the senses.</li>
+            <li>Reached an ultimate state of spiritual understanding and self-realization.</li>
+          </ul>
+          <p>He attained enlightenment, recognizing that all religions lead to the same Divine truth and transcending dualities like form and formless distinctions. He became a realized master (siddha), attracting seekers from diverse backgrounds.</p>
+        </div>
+        <div class="lang-hi">
+          <p>उनकी आध्यात्मिक यात्रा में सबसे महत्वपूर्ण मोड़ तब आया जब वे स्वामी चैतन्य जी के संपर्क में आए। अपने गुरु के कठोर मार्गदर्शन में, बावा लाल जी ने योग, ध्यान और शास्त्रों के ज्ञान में गहन प्रशिक्षण प्राप्त किया।</p>
+          <ul class="story-list">
+            <li>हिमालय में गहन ध्यान और योग की तपस्या की।</li>
+            <li>इंद्रियों को नियंत्रित करने पर केंद्रित अनुशासित और सरल जीवन व्यतीत किया।</li>
+            <li>आध्यात्मिक समझ और आत्म-साक्षात्कार की अंतिम अवस्था तक पहुंचे।</li>
+          </ul>
+          <p>उन्होंने आत्मज्ञान प्राप्त कर लिया था कि सभी धर्म एक ही ईश्वरीय सत्य की ओर ले जाते हैं। वे एक सिद्ध संत बन गए और सभी समुदायों के शिष्यों को अपनी ओर आकर्षित किया।</p>
+        </div>
+      </div>
+
+      <!-- 3. Establishment of Dhianpur -->
+      <div class="story-section reveal">
+        <h2>
+          <span class="lang-en">Dhianpur – The Sacred Center</span>
+          <span class="lang-hi">धियानपुर – पवित्र केंद्र</span>
+        </h2>
+        <div class="lang-en">
+          <p>The main spiritual seat of the Bawa Lal Sampraday was established at Dhianpur, now popularly known as Lal Dwara. His devoted disciple, Dhyan Dass Ji, played a crucial role in creating this spiritual center.</p>
+          <p>Because of Dhyan Dass Ji's unwavering devotion and service, the place was named "Dhianpur" (the town of Dhyan) in his honor. It instantly became the central hub for teachings, spiritual gatherings, and preserving the traditions.</p>
+          <div class="highlight-quote">
+            Even today, thousands of devotees from around the world visit Dhianpur for blessings, spiritual connection, and to witness the Jyoti Darshan.
+          </div>
+        </div>
+        <div class="lang-hi">
+          <p>बावा लाल संप्रदाय की मुख्य आध्यात्मिक पीठ धियानपुर में स्थापित की गई थी, जिसे अब लाल द्वारा के नाम से जाना जाता है। इस आध्यात्मिक केंद्र को स्थापित करने में उनके समर्पित शिष्य, ध्यान दास जी ने महत्वपूर्ण भूमिका निभाई।</p>
+          <p>ध्यान दास जी की अटूट भक्ति और सेवा के कारण, उनके सम्मान में इस स्थान का नाम "धियानपुर" (ध्यान का शहर) रखा गया। यह शिक्षाओं, आध्यात्मिक सभाओं और परंपराओं को संरक्षित करने का प्रमुख केंद्र बन गया।</p>
+          <div class="highlight-quote">
+            आज भी, दुनिया भर से हजारों भक्त आशीर्वाद, आध्यात्मिक जुड़ाव और ज्योति दर्शन के लिए धियानपुर आते हैं।
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Historical Significance -->
+      <div class="story-section reveal">
+        <h2>
+          <span class="lang-en">Connection with History & Dara Shikoh</span>
+          <span class="lang-hi">इतिहास और दारा शिकोह के साथ संबंध</span>
+        </h2>
+        <div class="lang-en">
+          <p>Bawa Lal Dayal Ji engaged in profound spiritual dialogues with the Mughal prince Dara Shikoh. Dara Shikoh was deeply interested in interfaith understanding, particularly between Hindu Vedantic thought and Islamic Sufism.</p>
+          <p>Their historical conversations reflected a perfect synthesis of Vedanta and Sufi metaphysics, emphasizing the unity of God (wahdat al-wujud). Bawa Lal’s teachings reinforced that inner realization holds far more value than external religious identity, and that the Divine is universal beyond religious divisions.</p>
+        </div>
+        <div class="lang-hi">
+          <p>बावा लाल दयाल जी ने मुगल शहजादे दारा शिकोह के साथ गहन आध्यात्मिक संवाद किए। दारा शिकोह हिंदू वेदांतिक विचारों और इस्लामी सूफीवाद के बीच आपसी समझ बनाने में बहुत रुचि रखते थे।</p>
+          <p>उनके ऐतिहासिक वार्तालाप वेदांत और सूफी अध्यात्म विज्ञान का एक आदर्श संश्लेषण थे, जिसमें ईश्वर की एकता पर जोर दिया गया था। बावा लाल की शिक्षाओं ने इस बात पर जोर दिया कि आंतरिक आत्मज्ञान बाहरी धार्मिक पहचान से कहीं अधिक मूल्य रखता है, और परमात्मा धार्मिक विभाजनों से परे सार्वभौमिक है।</p>
+        </div>
+      </div>
+
+      <!-- 5. Teachings and Philosophy -->
+      <div class="story-section reveal">
+        <h2>
+          <span class="lang-en">Core Teachings and Philosophy</span>
+          <span class="lang-hi">मुख्य शिक्षाएं और दर्शन</span>
+        </h2>
+        <div class="lang-en">
+          <p>His teachings are simple yet profound, perfectly blending several spiritual paths for holistic inner growth:</p>
+          <ul class="story-list">
+            <li><strong>Yoga (Discipline):</strong> Calm the mind through practice and focus within. Meditation is the primary tool for realization.</li>
+            <li><strong>Vairagya (Detachment):</strong> Stay free from ego, renounce unnecessary material desires, and live in the world without being bound by it.</li>
+            <li><strong>Gyana (Knowledge):</strong> Understand your true self (Atma-Gyana) and see the illusion of worldly differences.</li>
+            <li><strong>Bhakti (Devotion):</strong> Love and trust God with complete surrender.</li>
+          </ul>
+        </div>
+        <div class="lang-hi">
+          <p>उनकी शिक्षाएं सरल लेकिन गहन हैं, जो आंतरिक विकास के लिए कई आध्यात्मिक मार्गों का सही मिश्रण पेश करती हैं:</p>
+          <ul class="story-list">
+            <li><strong>योग (अनुशासन):</strong> अभ्यास के माध्यम से मन को शांत करें और भीतर ध्यान केंद्रित करें। आत्मज्ञान के लिए ध्यान सबसे महत्वपूर्ण साधन है।</li>
+            <li><strong>वैराग्य:</strong> अहंकार से मुक्त रहें, अनावश्यक भौतिक इच्छाओं का त्याग करें, और दुनिया में रहें लेकिन इससे बंधे नहीं।</li>
+            <li><strong>ज्ञान:</strong> अपने सच्चे स्वरूप (आत्म-ज्ञान) को समझें और दुनिया के मोहमाया व भेदों को पहचानें।</li>
+            <li><strong>भक्ति:</strong> पूर्ण समर्पण के साथ ईश्वर से प्रेम करें और विश्वास रखें।</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 6. Lineage of Gaddi Nashins -->
+      <div class="story-section reveal">
+        <h2>
+          <span class="lang-en">The Lineage of Gaddi Nashins</span>
+          <span class="lang-hi">गद्दी नशीनों की वंशावली (परंपरा)</span>
+        </h2>
+        <div class="lang-en">
+          <p>The teachings of Shri Bawa Lal Dayal Ji continue today without interruption through a sacred lineage of spiritual succession at Dhianpur.</p>
+          <ul class="story-list">
+            <li><strong>1st Acharya:</strong> Shri Bawa Lal Dayal Ji</li>
+            <li><strong>2nd Acharya:</strong> Baba Dhyan Dass Ji</li>
+            <li><strong>3rd to 14th Acharyas:</strong> Kept the daily worship (दैनिक पूजा) alive, expanded the teachings, and preserved the Dhianpur shrine over the centuries.</li>
+            <li><strong>15th & Current Acharya:</strong> Mahant Shri Ram Sundar Das Ji</li>
+          </ul>
+        </div>
+        <div class="lang-hi">
+          <p>श्री बावा लाल दयाल जी की शिक्षाएं धियानपुर में आध्यात्मिक उत्तराधिकार की एक पवित्र वंशावली के माध्यम से बिना किसी रुकावट के आज भी जारी हैं।</p>
+          <ul class="story-list">
+            <li><strong>प्रथम आचार्य:</strong> श्री बावा लाल दयाल जी</li>
+            <li><strong>द्वितीय आचार्य:</strong> बाबा ध्यान दास जी</li>
+            <li><strong>तीसरे से 14वें आचार्य:</strong> दैनिक पूजा को जीवित रखा, शिक्षाओं का विस्तार किया और सदियों से धियानपुर मंदिर (तीर्थ) को संरक्षित किया।</li>
+            <li><strong>15वें एवं वर्तमान आचार्य:</strong> महंत श्री राम सुंदर दास जी</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-text">
+            <span class="lang-en"><img src="images/tilak.jpg" alt="Tilak" class="tilak-icon-inline"> Shri Bawa Lal Ji Maharaj</span>
+            <span class="lang-hi"><img src="images/tilak.jpg" alt="Tilak" class="tilak-icon-inline"> श्री बावा लाल जी महाराज</span>
+          </div>
+          <p class="lang-en">Walk the path of truth, stay humble, and remember the Divine in all that you do.<br><span style="opacity: 0.8; font-style: italic; font-size: 0.9em; display: block; margin-top: 0.5rem;">- Inspired by the teachings of Shri Bawa Lal Dayal ji</span></p>
+          <p class="lang-hi">सत्य के मार्ग पर चलें, विनम्र रहें और अपने सभी कार्यों में ईश्वर को याद रखें।<br><span style="opacity: 0.8; font-style: italic; font-size: 0.9em; display: block; margin-top: 0.5rem;">- श्री बावा लाल दयाल जी की शिक्षाओं से प्रेरित</span></p>
+        </div>
+        <div class="footer-col">
+          <h4 class="lang-en">Quick Links</h4>
+          <h4 class="lang-hi">मुख्य लिंक</h4>
+          <ul>
+            <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-hi">होम</span></a></li>
+            <li><a href="story.html"><span class="lang-en">Sacred Story</span><span class="lang-hi">पवित्र कथा</span></a></li>
+            <li><a href="acharyas.html"><span class="lang-en">Vaishnavacharyas</span><span class="lang-hi">वैष्णवाचार्य</span></a></li>
+            <li><a href="gaddies.html"><span class="lang-en">Gaddis</span><span class="lang-hi">गद्दियां</span></a></li>
+          <li><a href="aarti.html"><span class="lang-en">Aarti</span><span class="lang-hi">आरती</span></a></li>
+          <li><a href="ardas.html"><span class="lang-en">Ardas</span><span class="lang-hi">अरदास</span></a></li>
+            <li><a href="events.html"><span class="lang-en">Events</span><span class="lang-hi">उत्सव</span></a></li>
+            <li><a href="gallery.html"><span class="lang-en">Photo Gallery</span><span class="lang-hi">फोटो गैलरी</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="lang-en">© 2025 Shri Bawa Lal Ji Maharaj Trust, Dhianpur. All rights reserved.</p>
+        <p class="lang-hi">© 2025 श्री बावा लाल जी महाराज ट्रस्ट, धियानपुर। सर्वाधिकार सुरक्षित।</p>
+        <p><img src="images/tilak.jpg" alt="Tilak" class="tilak-icon-inline"> <span class="lang-en">Jai Shri Bawa Lal Ji Maharaj</span><span class="lang-hi">जय श्री बावा लाल जी महाराज</span> <img src="images/tilak.jpg" alt="Tilak" class="tilak-icon-inline"></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

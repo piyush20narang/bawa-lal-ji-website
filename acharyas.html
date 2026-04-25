@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title class="lang-en">Vaishnavacharyas — Shri Bawa Lal Ji Maharaj</title>
+  <title class="lang-hi">वैष्णवाचार्य — श्री बावा लाल जी महाराज</title>
+  <meta name="description" content="Discover the unbroken lineage of 15 Vaishnavacharyas of Shri Dhianpur Dham starting from Satguru Shri Bawa Lal Dayal Ji.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/tilak.jpg">
+  <style>
+    .acharya-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .acharya-card {
+      background: var(--bg-glass);
+      border: 1px solid var(--border-subtle);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: all var(--transition-normal);
+      text-align: center;
+      padding-bottom: 2rem;
+    }
+    .acharya-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--gold);
+    }
+    .acharya-image-wrapper {
+      width: 100%;
+      height: 250px;
+      background: var(--gradient-warm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border-bottom: 3px solid var(--saffron);
+    }
+    .acharya-image-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      transition: transform var(--transition-normal);
+    }
+    .acharya-card:hover .acharya-image-wrapper img {
+      transform: scale(1.05);
+    }
+    .placeholder-icon {
+      font-size: 5rem;
+      opacity: 0.8;
+    }
+    .acharya-number {
+      background: var(--saffron);
+      color: var(--text-light);
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 50%;
+      font-weight: bold;
+      font-family: var(--font-heading);
+      margin: -20px auto 1rem auto;
+      position: relative;
+      z-index: 2;
+      border: 3px solid var(--bg-light);
+    }
+    .acharya-info {
+      padding: 0 1.5rem;
+    }
+    .acharya-info h4 {
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+    .acharya-info p {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <div class="brand-icon"><img src="images/tilak.jpg" alt="Tilak" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;"></div>
+        <div class="brand-text">
+          <span class="lang-en">Shri Bawa Lal Ji</span>
+          <span class="lang-hi">श्री बावा लाल जी</span>
+          <small class="lang-en">Dhianpur, Punjab</small>
+          <small class="lang-hi">धियानपुर, पंजाब</small>
+        </div>
+      </a>
+      <div style="display:flex; align-items:center;">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-hi">होम</span></a></li>
+          <li><a href="story.html"><span class="lang-en">Story</span><span class="lang-hi">जीवन कथा</span></a></li>
+          <li><a href="acharyas.html" class="active"><span class="lang-en">Vaishnavacharyas</span><span class="lang-hi">वैष्णवाचार्य</span></a></li>
+          <li><a href="gaddies.html"><span class="lang-en">Gaddis</span><span class="lang-hi">गद्दियां</span></a></li>
+          <li><a href="aarti.html"><span class="lang-en">Aarti</span><span class="lang-hi">आरती</span></a></li>
+          <li><a href="ardas.html"><span class="lang-en">Ardas</span><span class="lang-hi">अरदास</span></a></li>
+          <li><a href="events.html"><span class="lang-en">Events</span><span class="lang-hi">उत्सव</span></a></li>
+          <li><a href="gallery.html"><span class="lang-en">Gallery</span><span class="lang-hi">गैलरी</span></a></li>
+          <li><a href="video.html"><span class="lang-en">Videos</span><span class="lang-hi">वीडियो</span></a></li>
+          <li><a href="bhajan.html"><span class="lang-en">Bhajans</span><span class="lang-hi">भजन</span></a></li>
+          <li><a href="donation.html"><span class="lang-en">Donation</span><span class="lang-hi">सेवा / दान</span></a></li>
+          <li><a href="contact.html"><span class="lang-en">Contact</span><span class="lang-hi">संपर्क</span></a></li>
+          <li>
+            <div class="lang-toggle">
+              <button class="lang-btn active" data-lang="hi">हिंदी</button>
+              <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+          </li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Banner -->
+  <div class="page-banner">
+    <div class="container">
+      <h1 class="lang-en">Vaishnavacharyas of Dhianpur Dham</h1>
+      <h1 class="lang-hi">श्री धियानपुर धाम के वैष्णवाचार्य</h1>
+      <div class="om-divider"></div>
+      <p class="lang-en">The unbroken lineage of 15 spiritual successors (Mahants)</p>
+      <p class="lang-hi">15 आध्यात्मिक उत्तराधिकारियों (महंतों) की अखंड वंशावली</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="reveal" style="text-align: center; max-width: 800px; margin: 0 auto 1rem auto;">
+        <p class="lang-en" style="font-size: 1.15rem; line-height: 1.8;">
+          The Vaishnavacharyas of Shri Dhianpur Dham follow a sacred lineage starting from the 14th-century saint Shri Bawa Lal Ji. Below are the names of the 15 spiritual successors (Mahants) who have preserved the teachings and traditions of the Dhianpur Gaddi.
+        </p>
+        <p class="lang-hi" style="font-size: 1.15rem; line-height: 1.8;">
+          श्री धियानपुर धाम के वैष्णवाचार्य 14वीं सदी के संत श्री बावा लाल जी से शुरू होने वाली पवित्र वंशावली (परंपरा) का पालन करते हैं। नीचे उन 15 आध्यात्मिक उत्तराधिकारियों (महंतों) के नाम दिए गए हैं जिन्होंने धियानपुर गद्दी की शिक्षाओं और परंपराओं को संरक्षित किया है।
+        </p>
+      </div>
+
+      <div class="acharya-grid">
+        <!-- 1 -->
+        <div class="acharya-card reveal">
+          <div class="acharya-image-wrapper">
+            <img src="images/acharya_1.jpg" alt="Shri Bawa Lal Dayal Ji Maharaj" onerror="this.outerHTML='<div class=\'placeholder-icon\'>🚩</div>'">
+          </div>
+          <div class="acharya-number">1</div>
+          <div class="acharya-info">
+            <h4 class="lang-en">Shri Bawa Lal Dayal Ji Maharaj</h4>
+            <h4 class="lang-hi">श्री बावा लाल दयाल जी महाराज</h4>
+            <p class="lang-en">The founder and first Acharya.</p>
+            <p class="lang-hi">संस्थापक और प्रथम आचार्य।</p>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="acharya-card reveal">
+          <div class="acharya-image-wrapper">
+            <div class="placeholder-icon">🚩</div>
+          </div>
+          <div class="acharya-number">2</div>
+          <div class="acharya-info">
+            <h4 class="lang-en">Shri Gurumukh Lal Ji</h4>
+            <h4 class="lang-hi">श्री गुरुमुख लाल जी</h4>
+            <p class="lang-en">The immediate successor and second Acharya.</p>
+            <p class="lang-hi">तत्काल उत्तराधिकारी और द्वितीय आचार्य।</p>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="acharya-card reveal">
+          <div class="acharya-image-wrapper">
+            <div class="placeholder-icon">🚩</div>
+          </div>
+          <div class="acharya-number">3</div>
+          <div class="acharya-info">
+            <h4 class="lang-en">Shri Kashi Ram Ji</h4>
+            <h4 class="lang-hi">श्री काशी राम जी</h4>
+            <p class="lang-en">Third Acharya.</p>
+            <p class="lang-hi">तृतीय आचार्य।</p>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="acharya-card reveal">
+          <div class="acharya-image-wrapper">
+            <div class="placeholder-icon">🚩</div>
+          </div>
+          <div class="acharya-number">4</div>
+          <div class="acharya-info">
+            <h4 class="lang-en">Shri Ram Das Ji</h4>
+            <h4 class="lang-hi">श्री राम दास जी</h4>
+            <p class="lang-en">Fourth Acharya.</p>
+            <p class="lang-hi">चतुर्थ आचार्य।</p>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="acharya-card reveal">
+          <div class="acharya-image-wrapper">
+            <div class="placeholder-icon">🚩</div>
+          </div>
+          <div class="acharya-number">5</div>
+          <div class="acharya-info">
+            <h4 class="lang-en">Shri Lakshman Das Ji</h4>
+            <h4 class="lang-hi">श्री लक्ष्मण दास जी</h4>
+            <p class="lang-en">Fifth Acharya.</p>
+            <p class="lang-hi">पांचवें आचार्य।</p>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="acharya-card reveal">
+          <div class="acharya-image-wrapper">
+            <div class="placeholder-icon">🚩</div>
+          </div>
+          <div class="acharya-number">6</div>
+          <div class="acharya-info">
+            <h4 class="lang-en">Shri Chaturbhuj Das Ji</h4>
+            <h4 class="lang-hi">श्री चतुर्भुज दास जी</h4>
+            <p class="lang-en">Sixth Acharya.</p>
+            <p class="lang-hi">छठे आचार्य।</p>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="acharya-card reveal">
+          <div class="acharya-image-wrapper">
+            <div class="placeholder-icon">🚩</div>
+          </div>
+          <div class="acharya-number">7</div>
+          <div class="acharya-info">
+            <h4 class="lang-en">Shri Sahaj Ram Ji</h4>
+            <h4 class="lang-hi">श्री सहज राम जी</h4>
+            <p class="lang-en">Seventh Acharya.</p>
+            <p class="lang-hi">सातवें आचार्य।</p>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="acharya-card reveal">
+          <div class="acharya-image-wrapper">
+            <div class="placeholder-icon">🚩</div>
+          </div>
+          <div class="acharya-number">8</div>
+          <div class="acharya-info">
+            <h4 class="lang-en">Shri Sundar Das Ji</h4>
+            <h4 class="lang-hi">श्री सुंदर दास जी</h4>
+            <p class="lang-en">Eighth Acharya.</p>
+            <p class="lang-hi">आठवें आचार्य।</p>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="acharya-card reveal">
+          <div class="acharya-image-wrapper">
+            <div class="placeholder-icon">🚩</div>
+          </div>
+          <div class="acharya-number">9</div>
+          <div class="acharya-info">
+            <h4 class="lang-en">Shri Balram Das Ji</h4>
+            <h4 class="lang-hi">श्री बलराम दास जी</h4>
+            <p class="lang-en">Ninth Acharya, who initiated the 10th successor.</p>
+            <p class="lang-hi">नौवें आचार्य, जिन्होंने 10वें उत्तराधिकारी को दीक्षा दी।</p>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="acharya-card reveal">
+          <div class="acharya-image-wrapper">
+            <img src="images/acharya_10.jpg" alt="Shri Raghav Das Ji" onerror="this.outerHTML='<div class=\'placeholder-icon\'>🚩</div>'">
+          </div>
+          <div class="acharya-number">10</div>
+          <div class="acharya-info">
+            <h4 class="lang-en">Shri Raghav Das Ji</h4>
+            <h4 class="lang-hi">श्री राघव दास जी</h4>
+            <p class="lang-en">10th Acharya (1847–1875), known for his association with the Maharaja of Poonch.</p>
+            <p class="lang-hi">10वें आचार्य (1847-1875), जिन्हें पुंछ के महाराजा के साथ उनके जुड़ाव के लिए जाना जाता है।</p>
+          </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="acharya-card reveal">
+          <div class="acharya-image-wrapper">
+            <img src="images/acharya_11.jpg" alt="Shri Harinaam Das Ji" onerror="this.outerHTML='<div class=\'placeholder-icon\'>🚩</div>'">
+          </div>
+          <div class="acharya-number">11</div>
+          <div class="acharya-info">
+            <h4 class="lang-en">Shri Harinaam Das Ji</h4>
+            <h4 class="lang-hi">श्री हरिनाम दास जी</h4>
+            <p class="lang-en">11th Acharya (1875–1935).</p>
+            <p class="lang-hi">11वें आचार्य (1875-1935)।</p>
+          </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="acharya-card reveal">
+          <div class="acharya-image-wrapper">
+            <div class="placeholder-icon">🚩</div>
+          </div>
+          <div class="acharya-number">12</div>
+          <div class="acharya-info">
+            <h4 class="lang-en">Shri Sudarshan Das Ji</h4>
+            <h4 class="lang-hi">श्री सुदर्शन दास जी</h4>
+            <p class="lang-en">12th Acharya, who served as the Guru for the 13th successor.</p>
+            <p class="lang-hi">12वें आचार्य, जिन्होंने 13वें उत्तराधिकारी के लिए गुरु के रूप में कार्य किया।</p>
+          </div>
+        </div>
+
+        <!-- 13 -->
+        <div class="acharya-card reveal">
+          <div class="acharya-image-wrapper">
+            <img src="images/acharya_13.jpg" alt="Shri Dwarka Das Ji" onerror="this.outerHTML='<div class=\'placeholder-icon\'>🚩</div>'">
+          </div>
+          <div class="acharya-number">13</div>
+          <div class="acharya-info">
+            <h4 class="lang-en">Shri Dwarka Das Ji</h4>
+            <h4 class="lang-hi">श्री द्वारका दास जी</h4>
+            <p class="lang-en">13th Acharya (1948–1978) who built the famous Lal Dwara in Delhi.</p>
+            <p class="lang-hi">13वें आचार्य (1948-1978), जिन्होंने दिल्ली में प्रसिद्ध लाल द्वारा का निर्माण करवाया था।</p>
+          </div>
+        </div>
+
+        <!-- 14 -->
+        <div class="acharya-card reveal">
+          <div class="acharya-image-wrapper">
+            <img src="images/acharya_14.jpg" alt="Shri Narain Das Ji" onerror="this.outerHTML='<div class=\'placeholder-icon\'>🚩</div>'">
+          </div>
+          <div class="acharya-number">14</div>
+          <div class="acharya-info">
+            <h4 class="lang-en">Shri Narain Das Ji</h4>
+            <h4 class="lang-hi">श्री नारायण दास जी</h4>
+            <p class="lang-en">14th Acharya (1978–2001) who renovated many structures within the Dham.</p>
+            <p class="lang-hi">14वें आचार्य (1978-2001), जिन्होंने धाम के भीतर कई संरचनाओं का नवीनीकरण किया।</p>
+          </div>
+        </div>
+
+        <!-- 15 -->
+        <div class="acharya-card reveal">
+          <div class="acharya-image-wrapper">
+            <img src="images/acharya_15.jpg" alt="Shri Ram Sundar Das Ji" onerror="this.outerHTML='<div class=\'placeholder-icon\'>🚩</div>'">
+          </div>
+          <div class="acharya-number">15</div>
+          <div class="acharya-info">
+            <h4 class="lang-en">Shri Ram Sundar Das Ji</h4>
+            <h4 class="lang-hi">श्री राम सुंदर दास जी</h4>
+            <p class="lang-en">15th and current Vaishnavacharya of Shri Dhianpur Dham (2001–Present).</p>
+            <p class="lang-hi">श्री धियानपुर धाम के 15वें और वर्तमान वैष्णवाचार्य (2001-वर्तमान)।</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-text">
+            <span class="lang-en"><img src="images/tilak.jpg" alt="Tilak" class="tilak-icon-inline"> Shri Bawa Lal Ji Maharaj</span>
+            <span class="lang-hi"><img src="images/tilak.jpg" alt="Tilak" class="tilak-icon-inline"> श्री बावा लाल जी महाराज</span>
+          </div>
+          <p class="lang-en">Walk the path of truth, stay humble, and remember the Divine in all that you do.<br><span style="opacity: 0.8; font-style: italic; font-size: 0.9em; display: block; margin-top: 0.5rem;">- Inspired by the teachings of Shri Bawa Lal Dayal ji</span></p>
+          <p class="lang-hi">सत्य के मार्ग पर चलें, विनम्र रहें और अपने सभी कार्यों में ईश्वर को याद रखें।<br><span style="opacity: 0.8; font-style: italic; font-size: 0.9em; display: block; margin-top: 0.5rem;">- श्री बावा लाल दयाल जी की शिक्षाओं से प्रेरित</span></p>
+        </div>
+        <div class="footer-col">
+          <h4 class="lang-en">Quick Links</h4>
+          <h4 class="lang-hi">मुख्य लिंक</h4>
+          <ul>
+            <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-hi">होम</span></a></li>
+            <li><a href="story.html"><span class="lang-en">Sacred Story</span><span class="lang-hi">पवित्र कथा</span></a></li>
+            <li><a href="acharyas.html"><span class="lang-en">Vaishnavacharyas</span><span class="lang-hi">वैष्णवाचार्य</span></a></li>
+            <li><a href="gaddies.html"><span class="lang-en">Gaddis</span><span class="lang-hi">गद्दियां</span></a></li>
+          <li><a href="aarti.html"><span class="lang-en">Aarti</span><span class="lang-hi">आरती</span></a></li>
+          <li><a href="ardas.html"><span class="lang-en">Ardas</span><span class="lang-hi">अरदास</span></a></li>
+            <li><a href="events.html"><span class="lang-en">Events</span><span class="lang-hi">उत्सव</span></a></li>
+            <li><a href="gallery.html"><span class="lang-en">Photo Gallery</span><span class="lang-hi">फोटो गैलरी</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="lang-en">© 2025 Shri Bawa Lal Ji Maharaj Trust, Dhianpur. All rights reserved.</p>
+        <p class="lang-hi">© 2025 श्री बावा लाल जी महाराज ट्रस्ट, धियानपुर। सर्वाधिकार सुरक्षित।</p>
+        <p><img src="images/tilak.jpg" alt="Tilak" class="tilak-icon-inline"> <span class="lang-en">Jai Shri Bawa Lal Ji Maharaj</span><span class="lang-hi">जय श्री बावा लाल जी महाराज</span> <img src="images/tilak.jpg" alt="Tilak" class="tilak-icon-inline"></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
