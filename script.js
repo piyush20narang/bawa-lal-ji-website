@@ -261,7 +261,10 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Handle initial interaction to start audio (browser policy)
+    // 1. Attempt immediate autoplay
+    playMusic();
+
+    // 2. Fallback: Handle initial interaction to start audio if blocked
     const startAudioOnInteraction = () => {
       if (bgMusic.paused) {
         playMusic();
