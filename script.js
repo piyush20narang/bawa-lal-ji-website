@@ -230,6 +230,51 @@ document.addEventListener('DOMContentLoaded', () => {
 
     chapters.forEach(ch => chapterObserver.observe(ch));
   }
+
+  // ---------- Background Music ----------
+  const bgMusic = document.getElementById('bgMusic');
+  const musicToggle = document.getElementById('musicToggle');
+
+  if (bgMusic && musicToggle) {
+    const musicIcon = musicToggle.querySelector('.icon');
+    
+    const playMusic = () => {
+      bgMusic.play().then(() => {
+        musicToggle.classList.add('playing');
+        musicIcon.textContent = '🔊';
+      }).catch(error => {
+        console.log("Autoplay blocked or failed:", error);
+      });
+    };
+
+    const pauseMusic = () => {
+      bgMusic.pause();
+      musicToggle.classList.remove('playing');
+      musicIcon.textContent = '🔈';
+    };
+
+    musicToggle.addEventListener('click', () => {
+      if (bgMusic.paused) {
+        playMusic();
+      } else {
+        pauseMusic();
+      }
+    });
+
+    // Handle initial interaction to start audio (browser policy)
+    const startAudioOnInteraction = () => {
+      if (bgMusic.paused) {
+        playMusic();
+      }
+      document.removeEventListener('click', startAudioOnInteraction);
+      document.removeEventListener('keydown', startAudioOnInteraction);
+      document.removeEventListener('touchstart', startAudioOnInteraction);
+    };
+
+    document.addEventListener('click', startAudioOnInteraction);
+    document.addEventListener('keydown', startAudioOnInteraction);
+    document.addEventListener('touchstart', startAudioOnInteraction);
+  }
 });
 
 // ---------- Helpers ----------
