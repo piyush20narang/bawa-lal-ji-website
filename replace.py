@@ -10,8 +10,8 @@ for filepath in html_files:
 
     # 1. Replace favicon
     content = re.sub(
-        r'<link rel="icon" href="data:image/svg\+xml,[^"]*">',
-        '<link rel="icon" href="images/tilak.jpg">',
+        r'<link rel="icon" href="[^"]*">',
+        '<link rel="icon" href="favicon.png">',
         content
     )
 
