@@ -1485,7 +1485,7 @@ a:hover { color: var(--saffron-light); }
 
 /* ---------- Page Banner ---------- */
 .page-banner {
-  padding-top: calc(var(--nav-height) + var(--space-3xl));
+  padding-top: calc(var(--nav-height) + var(--space-xl));
   padding-bottom: var(--space-2xl);
   text-align: center;
   position: relative;
