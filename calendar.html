@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title class="lang-en">Hindu Calendar — Shri Bawa Lal Ji Maharaj</title>
+  <title class="lang-hi">हिन्दू पंचांग — श्री बावा लाल जी महाराज</title>
+  <meta name="description" content="Hindu Fasts and Festivals (Vrats & Festivals) calendar.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.png">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index" class="nav-brand">
+        <div class="brand-icon"><img src="images/tilak.jpg" alt="Tilak" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;"></div>
+        <div class="brand-text">
+          <span class="lang-en">Shri Bawa Lal Ji</span>
+          <span class="lang-hi">श्री बावा लाल जी</span>
+          <small class="lang-en">Dhianpur, Punjab</small>
+          <small class="lang-hi">ध्यानपुर, पंजाब</small>
+        </div>
+      </a>
+      <div style="display:flex; align-items:center;">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index"><span class="lang-en">Home</span><span class="lang-hi">होम</span></a></li>
+          <li><a href="acharyas"><span class="lang-en">Vaishnavacharyas</span><span class="lang-hi">वैष्णवाचार्य</span></a></li>
+          <li><a href="gaddies"><span class="lang-en">Gaddis</span><span class="lang-hi">गद्दियां</span></a></li>
+          <li><a href="aarti"><span class="lang-en">Aarti</span><span class="lang-hi">आरती</span></a></li>
+          <li><a href="ardas"><span class="lang-en">Ardas</span><span class="lang-hi">अरदास</span></a></li>
+          <li><a href="gallery"><span class="lang-en">Gallery</span><span class="lang-hi">गैलरी</span></a></li>
+          
+          <li><a href="aarti-guru-charnan-ki"><span class="lang-en">Aarti Guru Charnan</span><span class="lang-hi">आरती गुरु चरणन</span></a></li>
+          <li><a href="calendar" class="active"><span class="lang-en">Panchang</span><span class="lang-hi">पंचांग</span></a></li>
+          <li>
+            <div class="lang-toggle">
+              <button class="lang-btn active" data-lang="hi">हिंदी</button>
+              <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+          </li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Banner -->
+  <div class="page-banner">
+    <div class="container">
+      <h1 class="lang-en">Hindu Calendar</h1>
+      <h1 class="lang-hi">हिन्दू पंचांग</h1>
+      <div class="om-divider"></div>
+      <p class="lang-en">Fasts, Festivals, and Auspicious Days</p>
+      <p class="lang-hi">व्रत, त्यौहार और शुभ अवसर</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      
+      <!-- Year Switcher Buttons -->
+      <div class="calendar-year-selector">
+        <button class="calendar-year-btn" id="btn-2026" onclick="changeYear(2026)">2026</button>
+        <button class="calendar-year-btn" id="btn-2027" onclick="changeYear(2027)">2027</button>
+      </div>
+
+      <!-- Loading State -->
+      <div class="calendar-loading" id="calendarLoading">
+        <div class="calendar-spinner"></div>
+        <p class="lang-en">Loading calendar data from database...</p>
+        <p class="lang-hi">डेटाबेस से पंचांग लोड हो रहा है...</p>
+      </div>
+
+      <!-- Error State (Hidden by default) -->
+      <div class="calendar-error" id="calendarError" style="display: none;">
+        <h4 class="lang-en">Data Retrieval Failed</h4>
+        <h4 class="lang-hi">डेटा प्राप्त करने में असमर्थ</h4>
+        <p id="errorMessage" class="lang-en">Unable to load calendar. Please check your connection.</p>
+        <p id="errorMessageHi" class="lang-hi">पंचांग लोड करने में असमर्थ। कृपया अपना नेटवर्क कनेक्शन जांचें।</p>
+      </div>
+
+      <!-- Calendar Container -->
+      <div class="calendar-grid" id="calendarGrid" style="display: none;">
+        <!-- Dynamic Month Cards will go here -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-text">
+            <span class="lang-en"><img src="images/tilak.jpg" alt="Tilak" class="tilak-icon-inline"> Shri Bawa Lal Ji Maharaj</span>
+            <span class="lang-hi"><img src="images/tilak.jpg" alt="Tilak" class="tilak-icon-inline"> श्री बावा लाल जी महाराज</span>
+          </div>
+          <p class="lang-en">Walk the path of truth, stay humble, and remember the Divine in all that you do.<br><span style="opacity: 0.8; font-style: italic; font-size: 0.9em; display: block; margin-top: 0.5rem;">- Inspired by the teachings of Shri Bawa Lal Dayal ji</span></p>
+          <p class="lang-hi">सत्य के मार्ग पर चलें, विनम्र रहें और अपने सभी कार्यों में ईश्वर को याद रखें।<br><span style="opacity: 0.8; font-style: italic; font-size: 0.9em; display: block; margin-top: 0.5rem;">- श्री बावा लाल दयाल जी की शिक्षाओं से प्रेरित</span></p>
+        </div>
+        <div class="footer-col">
+          <h4 class="lang-en">Quick Links</h4>
+          <h4 class="lang-hi">मुख्य लिंक</h4>
+          <ul>
+            <li><a href="index"><span class="lang-en">Home</span><span class="lang-hi">होम</span></a></li>
+            <li><a href="acharyas"><span class="lang-en">Vaishnavacharyas</span><span class="lang-hi">वैष्णवाचार्य</span></a></li>
+            <li><a href="gaddies"><span class="lang-en">Gaddis</span><span class="lang-hi">गद्दियां</span></a></li>
+            <li><a href="aarti"><span class="lang-en">Aarti</span><span class="lang-hi">आरती</span></a></li>
+            <li><a href="ardas"><span class="lang-en">Ardas</span><span class="lang-hi">अरदास</span></a></li>
+            <li><a href="gallery"><span class="lang-en">Photo Gallery</span><span class="lang-hi">फोटो गैलरी</span></a></li>
+            
+            <li><a href="calendar"><span class="lang-en">Panchang</span><span class="lang-hi">पंचांग</span></a></li>
+            <li><a href="aarti-guru-charnan-ki"><span class="lang-en">Aarti Guru Charnan</span><span class="lang-hi">आरती गुरु चरणन</span></a></li>
+            <li><a href="short-ardas"><span class="lang-en">Short Ardas</span><span class="lang-hi">छोटी अर्दास</span></a></li>
+            <li><a href="stuti-of-shri-bawa-lal-ji"><span class="lang-en">Stuti</span><span class="lang-hi">स्तुति</span></a></li>
+            <li><a href="kshama-yachna-shri-bawa-lal-ji"><span class="lang-en">Kshama Yachna</span><span class="lang-hi">क्षमा याचना</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="lang-en">Created with love and devotion by devotees</p>
+        <p class="lang-hi">भक्तों द्वारा प्रेम और भक्ति के साथ बनाया गया</p>
+        <p><img src="images/tilak.jpg" alt="Tilak" class="tilak-icon-inline"> <span class="lang-en">Jai Shri Bawa Lal Ji Maharaj</span><span class="lang-hi">जय श्री बावा लाल जी महाराज</span> <img src="images/tilak.jpg" alt="Tilak" class="tilak-icon-inline"></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  
+  <!-- Supabase client library -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  
+  <script>
+    const supabaseUrl = 'https://hvuawtmcvhgcehzeqzof.supabase.co';
+    const supabaseKey = 'sb_publishable_lx7qJzACbFBmYg8GTjc-0A_vExhibyf';
+    const supabaseClient = supabase.createClient(supabaseUrl, supabaseKey);
+
+    // Parse year from ?year=... or default to current actual year
+    function getYearFromUrl() {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.has('year')) {
+        return parseInt(urlParams.get('year'));
+      }
+      return new Date().getFullYear(); // Default fallback to current actual year
+    }
+
+    const currentYear = getYearFromUrl();
+
+    // Set active year button state
+    document.querySelectorAll('.calendar-year-btn').forEach(btn => {
+      btn.classList.remove('active');
+    });
+    const activeBtn = document.getElementById(`btn-${currentYear}`);
+    if (activeBtn) {
+      activeBtn.classList.add('active');
+    }
+
+    // Function to navigate between years
+    function changeYear(newYear) {
+      if (window.location.pathname.endsWith('.html') || window.location.protocol === 'file:') {
+        window.location.href = `calendar.html?year=${newYear}`;
+      } else {
+        window.location.href = `/calendar?year=${newYear}`;
+      }
+    }
+
+    async function loadCalendar() {
+      const loadingEl = document.getElementById('calendarLoading');
+      const errorEl = document.getElementById('calendarError');
+      const gridEl = document.getElementById('calendarGrid');
+      const errMsgEn = document.getElementById('errorMessage');
+      const errMsgHi = document.getElementById('errorMessageHi');
+
+      try {
+        // Query data from Supabase
+        const { data, error } = await supabaseClient
+          .from('Hindu Fasts & Festivals')
+          .select('*')
+          .eq('year', currentYear)
+          .order('"S No."', { ascending: true });
+
+        if (error) throw error;
+
+        loadingEl.style.display = 'none';
+
+        if (!data || data.length === 0) {
+          errorEl.style.display = 'block';
+          errMsgEn.textContent = `No calendar records found for the year ${currentYear}.`;
+          errMsgHi.textContent = `वर्ष ${currentYear} के लिए कोई पंचांग रिकॉर्ड नहीं मिला।`;
+          return;
+        }
+
+        // Group data by Month
+        // We use the English 'Month - Year' as the key to group consistently, 
+        // but store the corresponding Hindi 'महीना - वर्ष' to display dynamically.
+        const monthlyGroups = {};
+
+        data.forEach(item => {
+          const monthKey = item['Month - Year'] || 'Unknown';
+          if (!monthlyGroups[monthKey]) {
+            monthlyGroups[monthKey] = {
+              monthNameEn: monthKey,
+              monthNameHi: item['महीना - वर्ष'] || monthKey,
+              items: []
+            };
+          }
+          monthlyGroups[monthKey].items.push(item);
+        });
+
+        // Month order helper map
+        const monthNameToIndex = {
+          'january': 0, 'february': 1, 'march': 2, 'april': 3, 'may': 4, 'june': 5,
+          'july': 6, 'august': 7, 'september': 8, 'october': 9, 'november': 10, 'december': 11
+        };
+
+        // Get sorted month keys chronologically
+        let monthKeys = Object.keys(monthlyGroups).sort((a, b) => {
+          const mNameA = a.split(' ')[0].toLowerCase();
+          const mNameB = b.split(' ')[0].toLowerCase();
+          return (monthNameToIndex[mNameA] ?? 0) - (monthNameToIndex[mNameB] ?? 0);
+        });
+
+        // For the current year, place past months at the bottom
+        const today = new Date();
+        const currentActualYear = today.getFullYear();
+        if (currentYear === currentActualYear) {
+          const currentActualMonth = today.getMonth(); // 0 to 11
+          const futureOrCurrentMonths = [];
+          const pastMonths = [];
+
+          monthKeys.forEach(key => {
+            const monthName = key.split(' ')[0].toLowerCase();
+            const idx = monthNameToIndex[monthName] ?? 0;
+            if (idx >= currentActualMonth) {
+              futureOrCurrentMonths.push(key);
+            } else {
+              pastMonths.push(key);
+            }
+          });
+
+          monthKeys = [...futureOrCurrentMonths, ...pastMonths];
+        }
+
+        // Generate HTML structure
+        let gridHtml = '';
+        
+        monthKeys.forEach(monthKey => {
+          const group = monthlyGroups[monthKey];
+          
+          let listHtml = '';
+          group.items.forEach(item => {
+            const dateEn = (item['Date'] || '').trim();
+            const dateHi = (item['तारीख'] || '').trim();
+            const festivalEn = item['Fasts & Festivals'] || '';
+            const festivalHi = item['व्रत एवं त्यौहार'] || '';
+
+            // Split date numbers and day names
+            const partsEn = dateEn.split(/\s+/);
+            const numEn = partsEn[0] || '';
+            const dayEn = partsEn.slice(1).join(' ') || '';
+
+            const partsHi = dateHi.split(/\s+/);
+            const numHi = partsHi[0] || '';
+            const dayHi = partsHi.slice(1).join(' ') || '';
+
+            // Determine if major festival to highlight
+            const isMajor = festivalEn.toLowerCase().includes('ekadashi') || 
+                            festivalEn.toLowerCase().includes('purnima') || 
+                            festivalEn.toLowerCase().includes('amavasya') ||
+                            festivalEn.toLowerCase().includes('rath yatra') ||
+                            festivalHi.includes('एकादशी') ||
+                            festivalHi.includes('पूर्णिमा') ||
+                            festivalHi.includes('अमावस्या') ||
+                            festivalHi.includes('रथ यात्रा');
+
+            const rowClass = isMajor ? 'calendar-event-row major-event' : 'calendar-event-row';
+
+            // Abbreviate English day name (e.g. Wednesday -> Wed)
+            const dayAbbrevEn = dayEn.substring(0, 3);
+
+            listHtml += `
+              <div class="${rowClass}">
+                <div class="calendar-date-badge">
+                  <span class="date-number">${numEn}</span>
+                  <span class="date-day lang-en">${dayAbbrevEn}</span>
+                  <span class="date-day lang-hi">${dayHi}</span>
+                </div>
+                <div class="calendar-event-details">
+                  <span class="lang-en">${festivalEn}</span>
+                  <span class="lang-hi">${festivalHi}</span>
+                </div>
+              </div>
+            `;
+          });
+
+          gridHtml += `
+            <div class="calendar-month-card reveal visible">
+              <h3 class="calendar-month-title">
+                <span class="lang-en">${group.monthNameEn}</span>
+                <span class="lang-hi">${group.monthNameHi}</span>
+              </h3>
+              <div class="calendar-list">
+                ${listHtml}
+              </div>
+            </div>
+          `;
+        });
+
+        gridEl.innerHTML = gridHtml;
+        gridEl.style.display = 'grid';
+
+      } catch (err) {
+        console.error('Error fetching calendar data:', err);
+        loadingEl.style.display = 'none';
+        errorEl.style.display = 'block';
+        errMsgEn.textContent = `Error: ${err.message || 'Unable to retrieve calendar details.'}`;
+        errMsgHi.textContent = `त्रुटि: ${err.message || 'पंचांग विवरण पुनर्प्राप्त करने में असमर्थ।'}`;
+      }
+    }
+
+    // Run loader
+    document.addEventListener('DOMContentLoaded', loadCalendar);
+  </script>
+</body>
+</html>
