@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="hi">
+
 <head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WF21RHE515"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-WF21RHE515');
@@ -28,12 +29,14 @@
       box-shadow: var(--shadow-sm);
       text-align: center;
     }
+
     .aarti-title {
       font-family: var(--font-heading);
       font-size: 2.2rem;
       color: var(--saffron);
       margin-bottom: 2rem;
     }
+
     .aarti-lyrics {
       font-family: var(--font-hindi);
       font-size: 1.3rem;
@@ -42,18 +45,22 @@
       max-width: 800px;
       margin: 0 auto;
     }
+
     .aarti-stanza {
       margin-bottom: 1.5rem;
     }
+
     .video-container {
       position: relative;
-      padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+      padding-bottom: 56.25%;
+      /* 16:9 Aspect Ratio */
       height: 0;
       overflow: hidden;
       border-radius: 16px;
       box-shadow: var(--shadow-md);
       margin-top: 3rem;
     }
+
     .video-container iframe {
       position: absolute;
       top: 0;
@@ -65,12 +72,14 @@
     }
   </style>
 </head>
+
 <body>
   <!-- Navigation -->
   <nav class="navbar" id="navbar">
     <div class="container">
       <a href="index" class="nav-brand">
-        <div class="brand-icon"><img src="images/tilak.jpg" alt="Tilak" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;"></div>
+        <div class="brand-icon"><img src="images/tilak.jpg" alt="Tilak"
+            style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;"></div>
         <div class="brand-text">
           <span class="lang-en">Shri Bawa Lal Ji</span>
           <span class="lang-hi">श्री बावा लाल जी</span>
@@ -81,14 +90,18 @@
       <div style="display:flex; align-items:center;">
         <ul class="nav-links" id="navLinks">
           <li><a href="index"><span class="lang-en">Home</span><span class="lang-hi">होम</span></a></li>
-          <li><a href="acharyas"><span class="lang-en">Vaishnavacharyas</span><span class="lang-hi">वैष्णवाचार्य</span></a></li>
+          <li><a href="acharyas"><span class="lang-en">Acharyas</span><span
+                class="lang-hi">वैष्णवाचार्य</span></a></li>
           <li><a href="gaddies"><span class="lang-en">Gaddis</span><span class="lang-hi">गद्दियां</span></a></li>
-          <li><a href="aarti" class="active"><span class="lang-en">Aarti</span><span class="lang-hi">आरती</span></a></li>
+          <li><a href="aarti" class="active"><span class="lang-en">Aarti</span><span class="lang-hi">आरती</span></a>
+          </li>
           <li><a href="ardas"><span class="lang-en">Ardas</span><span class="lang-hi">अरदास</span></a></li>
           <li><a href="gallery"><span class="lang-en">Gallery</span><span class="lang-hi">गैलरी</span></a></li>
-          
-          <li><a href="aarti-guru-charnan-ki"><span class="lang-en">Aarti Guru Charnan</span><span class="lang-hi">आरती गुरु चरणन</span></a></li>
-          <li><a href="calendar"><span class="lang-en">Panchang</span><span class="lang-hi">पंचांग</span></a></li>
+
+          <li><a href="aarti-guru-charnan-ki"><span class="lang-en">Aarti Guru Charnan</span><span class="lang-hi">आरती
+                गुरु चरणन</span></a></li>
+          <li><a href="calendar"><span class="lang-en">Panchang</span><span class="lang-hi">पंचांग</span></a></li>          <li><a href="stuti-of-shri-bawa-lal-ji"><span class="lang-en">Stuti</span><span class="lang-hi">स्तुति</span></a></li>
+
           <li>
             <div class="lang-toggle">
               <button class="lang-btn active" data-lang="hi">हिंदी</button>
@@ -118,7 +131,7 @@
     <div class="container-narrow">
       <div class="aarti-section reveal">
         <h2 class="aarti-title">|| आरती श्री बावा लाल दयाल जी की ||</h2>
-        
+
         <div class="aarti-lyrics">
           <div class="aarti-stanza">
             ओउम जय बावा लाल गुरु, स्वामी जय श्री लाल गुरु, सतगुरू जय श्री ।।<br>
@@ -171,20 +184,40 @@
           </div>
         </div>
 
-        <div class="video-container">
-          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wUiAzA1KFxE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-
-        <div style="margin-top: 3rem; text-align: center;">
-          <h3 style="color: var(--gold); font-family: var(--font-heading); margin-bottom: 1rem;">
-            <span class="lang-en">Other Aartis</span>
-            <span class="lang-hi">अन्य आरतियाँ</span>
-          </h3>
-          <a href="aarti-guru-charnan-ki" style="color: var(--saffron); font-size: 1.2rem; text-decoration: underline; font-weight: bold;">
-            <span class="lang-en">Aarti Guru Charnan Ki</span>
-            <span class="lang-hi">आरती गुरु चरणन की</span>
+        <div class="hero-actions" style="justify-content: center; margin-bottom: 2.5rem; margin-top: 1rem;">
+          <a href="acharyas" class="btn btn-outline">
+            <span class="lang-en">Acharyas</span>
+            <span class="lang-hi">वैष्णवाचार्य</span>
+          </a>
+          <a href="gaddies" class="btn btn-outline">
+            <span class="lang-en">Gaddis</span>
+            <span class="lang-hi">गद्दियां</span>
+          </a>
+          <a href="ardas" class="btn btn-outline">
+            <span class="lang-en">Ardas</span>
+            <span class="lang-hi">अरदास</span>
+          </a>
+          <a href="aarti-guru-charnan-ki" class="btn btn-outline">
+            <span class="lang-en">Aarti Guru Charnan</span>
+            <span class="lang-hi">आरती गुरु चरणन</span>
+          </a>
+          <a href="calendar" class="btn btn-outline">
+            <span class="lang-en">Panchang</span>
+            <span class="lang-hi">पंचांग</span>
+          </a>
+          <a href="stuti-of-shri-bawa-lal-ji" class="btn btn-outline">
+            <span class="lang-en">Stuti</span>
+            <span class="lang-hi">स्तुति</span>
           </a>
         </div>
+
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wUiAzA1KFxE"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+
       </div>
     </div>
   </section>
@@ -195,44 +228,62 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="brand-text">
-            <span class="lang-en"><img src="images/tilak.jpg" alt="Tilak" class="tilak-icon-inline"> Shri Bawa Lal Ji Maharaj</span>
-            <span class="lang-hi"><img src="images/tilak.jpg" alt="Tilak" class="tilak-icon-inline"> श्री बावा लाल जी महाराज</span>
+            <span class="lang-en"><img src="images/tilak.jpg" alt="Tilak" class="tilak-icon-inline"> Shri Bawa Lal Ji
+              Maharaj</span>
+            <span class="lang-hi"><img src="images/tilak.jpg" alt="Tilak" class="tilak-icon-inline"> श्री बावा लाल जी
+              महाराज</span>
           </div>
-          <p class="lang-en">Walk the path of truth, stay humble, and remember the Divine in all that you do.<br><span style="opacity: 0.8; font-style: italic; font-size: 0.9em; display: block; margin-top: 0.5rem;">- Inspired by the teachings of Shri Bawa Lal Dayal ji</span></p>
-          <p class="lang-hi">सत्य के मार्ग पर चलें, विनम्र रहें और अपने सभी कार्यों में ईश्वर को याद रखें।<br><span style="opacity: 0.8; font-style: italic; font-size: 0.9em; display: block; margin-top: 0.5rem;">- श्री बावा लाल दयाल जी की शिक्षाओं से प्रेरित</span></p>
+          <p class="lang-en">Walk the path of truth, stay humble, and remember the Divine in all that you do.<br><span
+              style="opacity: 0.8; font-style: italic; font-size: 0.9em; display: block; margin-top: 0.5rem;">- Inspired
+              by the teachings of Shri Bawa Lal Dayal ji</span></p>
+          <p class="lang-hi">सत्य के मार्ग पर चलें, विनम्र रहें और अपने सभी कार्यों में ईश्वर को याद रखें।<br><span
+              style="opacity: 0.8; font-style: italic; font-size: 0.9em; display: block; margin-top: 0.5rem;">- श्री
+              बावा लाल दयाल जी की शिक्षाओं से प्रेरित</span></p>
         </div>
         <div class="footer-col">
           <h4 class="lang-en">Quick Links</h4>
           <h4 class="lang-hi">मुख्य लिंक</h4>
           <ul>
             <li><a href="index"><span class="lang-en">Home</span><span class="lang-hi">होम</span></a></li>
-            <li><a href="acharyas"><span class="lang-en">Vaishnavacharyas</span><span class="lang-hi">वैष्णवाचार्य</span></a></li>
+            <li><a href="acharyas"><span class="lang-en">Acharyas</span><span
+                  class="lang-hi">वैष्णवाचार्य</span></a></li>
             <li><a href="gaddies"><span class="lang-en">Gaddis</span><span class="lang-hi">गद्दियां</span></a></li>
             <li><a href="aarti"><span class="lang-en">Aarti</span><span class="lang-hi">आरती</span></a></li>
-          <li><a href="ardas"><span class="lang-en">Ardas</span><span class="lang-hi">अरदास</span></a></li>
-            <li><a href="gallery"><span class="lang-en">Photo Gallery</span><span class="lang-hi">फोटो गैलरी</span></a></li>
-            
+            <li><a href="ardas"><span class="lang-en">Ardas</span><span class="lang-hi">अरदास</span></a></li>
+            <li><a href="gallery"><span class="lang-en">Photo Gallery</span><span class="lang-hi">फोटो गैलरी</span></a>
+            </li>
 
 
-          
-            <li><a href="aarti-guru-charnan-ki"><span class="lang-en">Aarti Guru Charnan</span><span class="lang-hi">आरती गुरु चरणन</span></a></li>
+
+
+            <li><a href="aarti-guru-charnan-ki"><span class="lang-en">Aarti Guru Charnan</span><span
+                  class="lang-hi">आरती गुरु चरणन</span></a></li>
             <li><a href="calendar"><span class="lang-en">Panchang</span><span class="lang-hi">पंचांग</span></a></li>
-          <li><a href="calendar"><span class="lang-en">Panchang</span><span class="lang-hi">पंचांग</span></a></li>
-            <li><a href="short-ardas"><span class="lang-en">Short Ardas</span><span class="lang-hi">छोटी अर्दास</span></a></li>
-            <li><a href="stuti-of-shri-bawa-lal-ji"><span class="lang-en">Stuti</span><span class="lang-hi">स्तुति</span></a></li>
-            <li><a href="kshama-yachna-shri-bawa-lal-ji"><span class="lang-en">Kshama Yachna</span><span class="lang-hi">क्षमा याचना</span></a></li>
+            <li><a href="short-ardas"><span class="lang-en">Short Ardas</span><span class="lang-hi">छोटी
+                  अर्दास</span></a></li>
+            <li><a href="stuti-of-shri-bawa-lal-ji"><span class="lang-en">Stuti</span><span
+                  class="lang-hi">स्तुति</span></a></li>
+            <li><a href="kshama-yachna-shri-bawa-lal-ji"><span class="lang-en">Kshama Yachna</span><span
+                  class="lang-hi">क्षमा याचना</span></a></li>
 
+            <li><a href="contact-us"><span class="lang-en">Contact Us</span><span class="lang-hi">संपर्क करें</span></a>
+            </li>
+            <li><a href="privacy-policy"><span class="lang-en">Privacy Policy</span><span class="lang-hi">गोपनीयता
+                  नीति</span></a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
         <p class="lang-en">Created with love and devotion by devotees</p>
         <p class="lang-hi">भक्तों द्वारा प्रेम और भक्ति के साथ बनाया गया</p>
-        <p><img src="images/tilak.jpg" alt="Tilak" class="tilak-icon-inline"> <span class="lang-en">Jai Shri Bawa Lal Ji Maharaj</span><span class="lang-hi">जय श्री बावा लाल जी महाराज</span> <img src="images/tilak.jpg" alt="Tilak" class="tilak-icon-inline"></p>
+        <p><img src="images/tilak.jpg" alt="Tilak" class="tilak-icon-inline"> <span class="lang-en">Jai Shri Bawa Lal Ji
+            Maharaj</span><span class="lang-hi">जय श्री बावा लाल जी महाराज</span> <img src="images/tilak.jpg"
+            alt="Tilak" class="tilak-icon-inline"></p>
       </div>
     </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
+
 </html>

@@ -35,14 +35,15 @@
       <div style="display:flex; align-items:center;">
         <ul class="nav-links" id="navLinks">
           <li><a href="index"><span class="lang-en">Home</span><span class="lang-hi">होम</span></a></li>
-          <li><a href="acharyas"><span class="lang-en">Vaishnavacharyas</span><span class="lang-hi">वैष्णवाचार्य</span></a></li>
+          <li><a href="acharyas"><span class="lang-en">Acharyas</span><span class="lang-hi">वैष्णवाचार्य</span></a></li>
           <li><a href="gaddies"><span class="lang-en">Gaddis</span><span class="lang-hi">गद्दियां</span></a></li>
           <li><a href="aarti"><span class="lang-en">Aarti</span><span class="lang-hi">आरती</span></a></li>
           <li><a href="ardas"><span class="lang-en">Ardas</span><span class="lang-hi">अरदास</span></a></li>
           <li><a href="gallery"><span class="lang-en">Gallery</span><span class="lang-hi">गैलरी</span></a></li>
           
           <li><a href="aarti-guru-charnan-ki"><span class="lang-en">Aarti Guru Charnan</span><span class="lang-hi">आरती गुरु चरणन</span></a></li>
-          <li><a href="calendar"><span class="lang-en">Panchang</span><span class="lang-hi">पंचांग</span></a></li>
+          <li><a href="calendar"><span class="lang-en">Panchang</span><span class="lang-hi">पंचांग</span></a></li>          <li><a href="stuti-of-shri-bawa-lal-ji"><span class="lang-en">Stuti</span><span class="lang-hi">स्तुति</span></a></li>
+
           <li>
             <div class="lang-toggle">
               <button class="lang-btn active" data-lang="hi">हिंदी</button>
@@ -72,42 +73,12 @@
   <section class="section">
     <div class="container">
       <div class="contact-grid">
-        <!-- Contact Form -->
-        <div class="reveal">
+        <!-- Contact Form (Embedded Google Form) -->
+        <div class="reveal" style="flex: 1; min-width: 300px;">
           <h3 style="font-family: var(--font-heading); color: var(--gold); margin-bottom: 1.5rem; font-size: 1.4rem;">
             <span class="lang-en">Send us a Message</span><span class="lang-hi">हमें एक संदेश भेजें</span>
           </h3>
-          <form class="contact-form" id="contactForm">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">
-                  <span class="lang-en">Full Name *</span><span class="lang-hi">पूरा नाम *</span>
-                </label>
-                <input type="text" id="name" name="name" required>
-              </div>
-              <div class="form-group">
-                <label for="email">
-                  <span class="lang-en">Email Address *</span><span class="lang-hi">ईमेल *</span>
-                </label>
-                <input type="email" id="email" name="email" required>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="phone">
-                <span class="lang-en">Phone Number</span><span class="lang-hi">फ़ोन नंबर</span>
-              </label>
-              <input type="tel" id="phone" name="phone">
-            </div>
-            <div class="form-group">
-              <label for="message">
-                <span class="lang-en">Your Message *</span><span class="lang-hi">आपका संदेश *</span>
-              </label>
-              <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" style="align-self: flex-start;">
-              <img src="images/tilak.jpg" alt="Tilak" class="tilak-icon-inline"> <span class="lang-en">Send Message</span><span class="lang-hi">संदेश भेजें</span>
-            </button>
-          </form>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScrz3O7851ljlVAKlkrTMAYl_BCtmtiJ_yJbuvYTT4fgdYibw/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0" style="border: none; border-radius: 12px; background: #ffffff;">Loading…</iframe>
         </div>
 
         <!-- Contact Info Cards -->
@@ -118,20 +89,8 @@
               <h4 class="lang-en">Sacred Location</h4>
               <h4 class="lang-hi">पवित्र स्थल</h4>
               <p>
-                <span class="lang-en">Lal Dwara, Dhianpur<br>District Gurdaspur, Punjab 143521<br>India</span>
-                <span class="lang-hi">लाल द्वारा, ध्यानपुर<br>जिला गुरदासपुर, पंजाब 143521<br>भारत</span>
-              </p>
-            </div>
-          </div>
-
-          <div class="contact-card">
-            <div class="contact-card-icon">📞</div>
-            <div>
-              <h4 class="lang-en">Phone</h4>
-              <h4 class="lang-hi">फ़ोन</h4>
-              <p>
-                <span class="lang-en">To be updated<br><span style="font-size: 0.8rem; color: var(--text-muted);">Available during office hours</span></span>
-                <span class="lang-hi">जल्द अपडेट किया जाएगा<br><span style="font-size: 0.8rem; color: var(--text-muted);">कार्यालय समय के दौरान उपलब्ध</span></span>
+                <span class="lang-en">Shri Bawa Lal Ji (Dhianpur Dham)<br>Dhianpur, Gurdaspur District, Punjab 143605<br>India</span>
+                <span class="lang-hi">श्री बावा लाल जी (ध्यानपुर धाम)<br>ध्यानपुर, जिला गुरदासपुर, पंजाब 143605<br>भारत</span>
               </p>
             </div>
           </div>
@@ -141,18 +100,7 @@
             <div>
               <h4 class="lang-en">Email</h4>
               <h4 class="lang-hi">ईमेल</h4>
-              <p>info@shribawalalji.com</p>
-            </div>
-          </div>
-
-          <!-- Social Links -->
-          <div style="margin-top: 0.5rem;">
-            <h4 style="font-family: var(--font-heading); color: var(--text-primary); margin-bottom: 1rem;">
-              <span class="lang-en">Follow Us</span><span class="lang-hi">जुड़ें</span>
-            </h4>
-            <div class="social-links">
-              <a href="https://www.instagram.com/merebawalalji/" target="_blank" class="social-link" title="Instagram">📷</a>
-              <a href="https://www.facebook.com/groups/122327708602533/" target="_blank" class="social-link" title="Facebook">📘</a>
+              <p><a href="mailto:bawalaljiseva@gmail.com" style="color: inherit; text-decoration: underline;">bawalaljiseva@gmail.com</a></p>
             </div>
           </div>
         </div>
@@ -177,7 +125,7 @@
           <h4 class="lang-hi">मुख्य लिंक</h4>
           <ul>
             <li><a href="index"><span class="lang-en">Home</span><span class="lang-hi">होम</span></a></li>
-            <li><a href="acharyas"><span class="lang-en">Vaishnavacharyas</span><span class="lang-hi">वैष्णवाचार्य</span></a></li>
+            <li><a href="acharyas"><span class="lang-en">Acharyas</span><span class="lang-hi">वैष्णवाचार्य</span></a></li>
             <li><a href="gaddies"><span class="lang-en">Gaddis</span><span class="lang-hi">गद्दियां</span></a></li>
           <li><a href="aarti"><span class="lang-en">Aarti</span><span class="lang-hi">आरती</span></a></li>
           <li><a href="ardas"><span class="lang-en">Ardas</span><span class="lang-hi">अरदास</span></a></li>
@@ -188,11 +136,12 @@
           
             <li><a href="aarti-guru-charnan-ki"><span class="lang-en">Aarti Guru Charnan</span><span class="lang-hi">आरती गुरु चरणन</span></a></li>
             <li><a href="calendar"><span class="lang-en">Panchang</span><span class="lang-hi">पंचांग</span></a></li>
-          <li><a href="calendar"><span class="lang-en">Panchang</span><span class="lang-hi">पंचांग</span></a></li>
-            <li><a href="short-ardas"><span class="lang-en">Short Ardas</span><span class="lang-hi">छोटी अर्दास</span></a></li>
+<li><a href="short-ardas"><span class="lang-en">Short Ardas</span><span class="lang-hi">छोटी अर्दास</span></a></li>
             <li><a href="stuti-of-shri-bawa-lal-ji"><span class="lang-en">Stuti</span><span class="lang-hi">स्तुति</span></a></li>
             <li><a href="kshama-yachna-shri-bawa-lal-ji"><span class="lang-en">Kshama Yachna</span><span class="lang-hi">क्षमा याचना</span></a></li>
 
+            <li><a href="contact-us"><span class="lang-en">Contact Us</span><span class="lang-hi">संपर्क करें</span></a></li>
+            <li><a href="privacy-policy"><span class="lang-en">Privacy Policy</span><span class="lang-hi">गोपनीयता नीति</span></a></li>
           </ul>
         </div>
       </div>

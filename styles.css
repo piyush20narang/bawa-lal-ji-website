@@ -1796,7 +1796,7 @@ a:hover {
   }
 
   .footer-col ul {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .footer-bottom {
